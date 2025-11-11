@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Insurance Planning | Peacock Wealth Management</title>
+  
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- CSS -->
+<link rel="stylesheet" href="{{ url_for('static', filename='css/in.css') }}">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center" href="home.html">
+      <img src="{{url_for('static', filename=img/peacock.png)}}" alt="Peacock Wealth Management Logo" class="logo me-2">
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+        <!-- <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li> -->
+          <!-- Services Dropdown -->
+        <li class="dropdown" class="nav-item">
+          <a href="#" class="nav-link">Services ▾</a>
+          <div class="dropdown-content">
+            <div class="dropdown-grid">
+               <a href="">Investment & Advisory</a>
+              <a href="demat.html">Demat</a>
+               <a href="equity.html">Equity Advisory</a>
+              <a href="pms.html">Portfolio Management</a>
+              <a href="mut.html">Mutual Fund Advisory</a>
+               <a href="aif.html">Alternative Investment Fund</a>
+               <a href="com.html ">Commodities & Precious Metals Advisory</a>
+              <a href="un.html">Unlisted Shares & Pre-IPO Intelligence</a>
+              <a href="so.html">Sovereign Gold Bonds (SGB)</a>
+              <a href="ipo.html">Initial Public Offering (IPO)</a>
+              <a href="ncd.html">Non Convertible Debentures (NCD)</a>
+              <a href="fd.html">Fixed Deposit</a>
+               <a href=" ">Debt & Income Instruments</a>
+               <a href=" ">Wealth Strategy & Planning</a>
+               <a href=" ">Designing disciplined growth with purpose.</a>
+              <a href="financial.html">Financial & Goal Planning</a>
+               <a href="wea.html">Wealth Desk / Portfolio Review</a>
+              <a href="np.html">National Pension System</a>
+              <a href="las.html">Loan Against Shares</a>
+              <a href="loans.html">Loan Products & Structured Financing</a>
+              <a href="in.html">Insurance & Risk Protection</a>
+              <a href="sec.html">Secondary Market Department</a>
+              <a href="  ">Market Research & Sectoral Insights</a>
+              <a href="  ">Macro Economic Reports</a>
+              <a href="  ">Markets & Instruments</a>
+              <a href="forex.html">Forex Advisory & Market Insights</a>
+              <a href="  ">Global access. Local compliance. </a>
+              <a href="  ">Macro analysis, INR-linked pair trends, and currency risk strategies.</a>
+              <a href="  ">Intelligent execution.</a>
+              <a href="currency.html">Currency Exchange</a>
+              <a href="  ">Authorised currency conversion and remittance guidance.</a>
+            </div>
+          </div>
+        </li>
+   
+        <li class="nav-item"><a class="nav-link" href="pricing.html">Fee Structure</a></li>
+        <!-- <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li> -->
+        <li class="nav-item"><a class="nav-link" href="co.html">Course</a></li>
+
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+        <li class="nav-item"><a class="nav-link active" href="in.html">Insurance Planning</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-content">
+    <div class="hero-text">
+      <h2>Insurance Planning</h2>
+      <p>Protecting What You’ve Built. Preserving What Matters Most.</p>
+      <a href="contact.html" class="btn-primary">Contact Us for More Details</a>
+    </div>
+    <div class="hero-image">
+      <img src="{{url_for('static', filename=img/y25.jpg)}}" alt="Insurance Planning Illustration" />
+    </div>
+  </div>
+</section>
+
+
+<!-- WHAT IS INSURANCE -->
+<section class="info wrap reveal">
+  <h2> Insurance Planning</h2>
+  <p class="lead">
+    Wealth is not just about what you earn — it’s about what you secure.
+At Peacock Wealth Management, insurance is more than a product; it’s a strategic shield that safeguards your family, assets, and business from life’s uncertainties.
+
+We design insurance portfolios that complement your broader financial architecture — ensuring that every aspect of your wealth is protected, purposeful, and future-ready.
+  </p>
+</section>
+
+<!-- WHY IT MATTERS -->
+<section class="info wrap">
+  <div class="two-col">
+    <div class="col reveal">
+      <div class="icon-title"><i class="fas fa-shield-alt"></i><h3>Why It Matters</h3></div>
+      <ul class="highlight-points">
+        <li><i class="fas fa-check-circle"></i>Family & income protection</li>
+        <li><i class="fas fa-check-circle"></i>Medical & emergency security</li>
+        <li><i class="fas fa-check-circle"></i>Protect assets & wealth</li>
+        <li><i class="fas fa-check-circle"></i>Tax-efficient planning</li>
+        <li><i class="fas fa-check-circle"></i>Peace of mind & future safety</li>
+      </ul>
+    </div>
+
+    <div class="col reveal">
+      <div class="icon-title"><i class="fas fa-layer-group"></i><h3>Our Expertise Covers</h3></div>
+      <ul class="highlight-points">
+        <li><i class="fas fa-heartbeat"></i>Life & insurance</li>
+        <li><i class="fas fa-stethoscope"></i>Term Plans for maximum coverage</li>
+        <li><i class="fas fa-car-crash"></i>ULIPs for investment-linked protectio</li>
+        <li><i class="fas fa-home"></i>Health & Medical Insurance</li>
+        <li><i class="fas fa-briefcase"></i>Business & Professional Insurance</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- TYPES -->
+<section class="info wrap reveal">
+  <h2>Types of Insurance Solutions</h2>
+  <div class="steps-grid">
+    <div class="step">
+      <div class="step-icon">1</div>
+      <h4>Life Insurance</h4>
+      <p>Secure your family’s future with income replacement & legacy planning.</p>
+    </div>
+    <div class="step">
+      <div class="step-icon">2</div>
+      <h4>Health & Critical Illness</h4>
+      <p>Coverage for hospitalisation, major illnesses, and medical emergencies.</p>
+    </div>
+    <div class="step">
+      <div class="step-icon">3</div>
+      <h4>Personal Accident</h4>
+      <p>Support in case of accidental injury, disability, or loss of life.</p>
+    </div>
+    <div class="step">
+      <div class="step-icon">4</div>
+      <h4>Assets & Property</h4>
+      <p>Protection for vehicles, homes, and valuable assets.</p>
+    </div>
+    <div class="step">
+      <div class="step-icon">5</div>
+      <h4>Business & Liability</h4>
+      <p>Corporate insurance, group coverage & liability protection.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="contact-cta reveal">
+  <h3>Your Protection Plan Starts Here</h3>
+  <p>Plan smart. Live secure. Build confidence for tomorrow with expert-backed insurance solutions</p>
+  <a href="contact.html" class="btn-secondary">Contact Us for More Details →</a><br><br>
+    <hr class="border-light">
+
+</section>
+
+
+<!-- FOOTER -->
+<footer class="footer text-white pt-5 pb-3" style="background-color:#000000;">
+  <div class="container">
+    <div class="row text-center text-md-start">
+      
+      <div class="col-md-4 mb-4">
+        <h5 class="text-warning mb-3">Peacock Wealth Management</h5>
+        <p>
+          Your trusted partner in financial growth, investment planning, and wealth management.  
+          We help you build a secure and prosperous future.
+        </p>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <h5 class="text-warning mb-3">Quick Links</h5>
+        <ul class="list-unstyled">
+          <li><a href="home.html" class="text-white text-decoration-none">Home</a></li>
+          <li><a href="about.html" class="text-white text-decoration-none">About Us</a></li>
+          <li><a href="services.html" class="text-white text-decoration-none">Services</a></li>
+          <li><a href="contact.html" class="text-white text-decoration-none">Contact</a></li>
+          <li><a href="privacy.html" class="text-white text-decoration-none">Privacy Policy</a></li>
+          <li><a href="terms.html" class="text-white text-decoration-none">Terms & Conditions</a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <h5 class="text-warning mb-3">Contact Us</h5>
+        <p><i class="bi bi-geo-alt-fill text-warning"></i> Chennai, India</p>
+        <p><i class="bi bi-envelope-fill text-warning"></i> info@peacock.org.in</p>
+        <p><i class="bi bi-telephone-fill text-warning"></i> +91 9363963411</p>
+        <p><i class="bi bi-telephone-fill text-warning"></i> +91 4431520110</p>
+
+        <div class="mt-3">
+          <a href="#" class="text-white me-3"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="text-white me-3"><i class="bi bi-linkedin"></i></a>
+          <a href="#" class="text-white me-3"><i class="bi bi-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <hr class="border-light">
+
+    <div class="text-center">
+      <p class="mb-0">
+        &copy; 2025 Peacock Wealth Management. All rights reserved.<br>
+     
+      </p>
+    </div>
+  </div>
+</footer>
+
+
+<script>
+  const revealEls = document.querySelectorAll('.reveal');
+  const revealOnScroll = () => {
+    const h = window.innerHeight;
+    revealEls.forEach(el => {
+      const r = el.getBoundingClientRect();
+      if (r.top < h - 120) el.classList.add('active');
+    });
+  };
+  window.addEventListener('scroll', revealOnScroll);
+  requestAnimationFrame(revealOnScroll);
+</script>
+
+</body>
+</html>

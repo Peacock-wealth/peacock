@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mutual Fund Investments | Peacock Wealth</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/mut.css') }}">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+ <!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Bootstrap JS (for mobile menu toggle) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container">
+    <!-- Logo -->
+    <a class="navbar-brand d-flex align-items-center" href="home.html">
+      <img src="{{url_for('static', filename=img/peacock.png)}}" alt="Peacock Wealth Management Logo" class="logo me-2">
+    </a>
+
+    <!-- Mobile Toggle -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Menu Items -->
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+        <!-- <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li> -->
+           <!-- Services Dropdown -->
+        <li class="dropdown" class="nav-item">
+          <a href="#" class="nav-link">Services ▾</a>
+          <div class="dropdown-content">
+            <div class="dropdown-grid">
+               <a href="">Investment & Advisory</a>
+              <a href="demat.html">Demat</a>
+               <a href="equity.html">Equity Advisory</a>
+              <a href="pms.html">Portfolio Management</a>
+              <a href="mut.html">Mutual Fund Advisory</a>
+               <a href="aif.html">Alternative Investment Fund</a>
+               <a href=" com.html">Commodities & Precious Metals Advisory</a>
+              <a href="un.html">Unlisted Shares & Pre-IPO Intelligence</a>
+              <a href="so.html">Sovereign Gold Bonds (SGB)</a>
+              <a href="ipo.html">Initial Public Offering (IPO)</a>
+              <a href="ncd.html">Non Convertible Debentures (NCD)</a>
+              <a href="fd.html">Fixed Deposit</a>
+               <a href=" ">Debt & Income Instruments</a>
+               <a href=" ">Wealth Strategy & Planning</a>
+               <a href=" ">Designing disciplined growth with purpose.</a>
+              <a href="financial.html">Financial & Goal Planning</a>
+               <a href="wea.html">Wealth Desk / Portfolio Review</a>
+              <a href="np.html">National Pension System</a>
+              <a href="las.html">Loan Against Shares</a>
+              <a href="loans.html">Loan Products & Structured Financing</a>
+              <a href="in.html">Insurance & Risk Protection</a>
+              <a href="sec.html">Secondary Market Department</a>
+              <a href="  ">Market Research & Sectoral Insights</a>
+              <a href="  ">Macro Economic Reports</a>
+              <a href="  ">Markets & Instruments</a>
+              <a href="forex.html">Forex Advisory & Market Insights</a>
+              <a href="  ">Global access. Local compliance. </a>
+              <a href="  ">Macro analysis, INR-linked pair trends, and currency risk strategies.</a>
+              <a href="  ">Intelligent execution.</a>
+              <a href="currency.html">Currency Exchange</a>
+              <a href="  ">Authorised currency conversion and remittance guidance.</a>
+            </div>
+          </div>
+        </li>
+          <li class="nav-item"><a class="nav-link" href="pricing.html">Fee Structure</a></li>
+        <li class="nav-item"><a class="nav-link" href="co.html">Course</a></li>
+
+        <!-- <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li> -->
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+        <li class="nav-item"><a class="nav-link active" href="mut.html">Mutual Fund</a></li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-content">
+    <div class="hero-text">
+      <h1>Mutual Fund Investments</h1>
+      <p>A smart & disciplined way to build long-term wealth with professional management & diversification.</p>
+      <a href="contact.html" class="btn-primary">Start Investing</a>
+    </div>
+    <div class="hero-image">
+      <img src="{{url_for('static', filename=img/y11.jpg)}}" alt="">
+    </div>
+  </div>
+</section>
+
+<!-- WHAT IS MF -->
+<section class="info wrap reveal">
+  <h2>What Is a Mutual Fund?</h2>
+  <p class="lead">A Mutual Fund pools money from multiple investors and invests in equities, bonds & other assets through expert fund managers.</p>
+  
+  <div class="two-col">
+    <div class="col">
+      <div class="icon-title"><i class="fa-solid fa-layer-group"></i><h3>How It Works</h3></div>
+      <ul class="highlight-points">
+        <li><i class="fa-solid fa-circle-check"></i>Professional Fund Manager invests your money</li>
+        <li><i class="fa-solid fa-circle-check"></i>Diversified across companies & sectors</li>
+        <li><i class="fa-solid fa-circle-check"></i>NAV determines investor returns</li>
+      </ul>
+    </div>
+
+    <div class="col">
+      <div class="icon-title"><i class="fa-solid fa-chart-line"></i><h3>Why Choose It</h3></div>
+      <ul class="highlight-points">
+        <li><i class="fa-solid fa-circle-check"></i>Less risk vs single stock investing</li>
+        <li><i class="fa-solid fa-circle-check"></i>Simple, flexible, and transparent</li>
+        <li><i class="fa-solid fa-circle-check"></i>Suitable for all investor types</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- TYPES -->
+<section class="info wrap reveal">
+  <h2>Types of Mutual Funds</h2>
+
+  <div class="steps-grid">
+    <div class="step"><div class="step-icon">E</div><h4>Equity Funds</h4><p>Long-term growth, higher returns</p></div>
+    <div class="step"><div class="step-icon">D</div><h4>Debt Funds</h4><p>Stable income & lower risk</p></div>
+    <div class="step"><div class="step-icon">H</div><h4>Hybrid Funds</h4><p>Balanced equity + debt mix</p></div>
+    <div class="step"><div class="step-icon">L</div><h4>Liquid Funds</h4><p>Short-term parking, high liquidity</p></div>
+    <div class="step"><div class="step-icon">T</div><h4>Tax-Saving (ELSS)</h4><p>Save tax under Section 80C</p></div>
+  </div>
+</section>
+
+<!-- SIP -->
+<section class="info wrap reveal">
+  <h2>Systematic Investment Plan (SIP)</h2>
+  <p class="lead">Invest small, grow big. SIP builds wealth through discipline, averaging & compounding.</p>
+</section>
+
+<!-- WHY CHOOSE US -->
+<section class="info wrap reveal">
+  <h2>Why Choose Peacock Wealth?</h2>
+
+  <div class="who-grid">
+    <div class="who-card"><i class="fa-solid fa-user-tie"></i><span>Expert Fund Guidance</span></div>
+    <div class="who-card"><i class="fa-solid fa-list-check"></i><span>Goal-based Suggestions</span></div>
+    <div class="who-card"><i class="fa-solid fa-hourglass"></i><span>Long-term Planning</span></div>
+    <div class="who-card"><i class="fa-solid fa-layer-group"></i><span>Market Insights</span></div>
+
+    <!-- <div class="who-card"><i class="fa-solid fa-layer-group"></i><span>Market Insights</span></div> -->
+  </div>
+</section>
+
+<!-- CONTACT -->
+<!-- <section id="contact" class="contact-box reveal">
+  <h3>Start Your Wealth Journey Today</h3>
+  <p>Invest smarter with expert-guided Mutual Fund planning tailored to your goals.</p>
+  <a class="btn" class="btn-primary" href="https://wa.me/9363963411">Contact Us </a>
+</section> -->
+<section class="cta-section reveal">
+  <h3>Start Your Wealth Journey Today</h3>
+  <p>Invest smarter with expert-guided Mutual Fund planning tailored to your goals.</p>
+    <a href="contact.html" class="btn-secondary">Contact Us for More Details →</a><br><br>
+     <hr class="border-light">
+
+    </section>
+    
+
+<!-- footer -->
+<footer class="footer text-white pt-5 pb-3" style="background-color:#000000;">
+  <div class="container">
+    <div class="row text-center text-md-start">
+      
+      <!-- Company Info -->
+      <div class="col-md-4 mb-4">
+        <h5 class="text-warning mb-3">Peacock Wealth Management</h5>
+        <p>
+          Your trusted partner in financial growth, investment planning, and wealth management.  
+          We help you build a secure and prosperous future.
+        </p>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="col-md-4 mb-4">
+        <h5 class="text-warning mb-3">Quick Links</h5>
+        <ul class="list-unstyled">
+          <li><a href="home.html" class="text-white text-decoration-none">Home</a></li>
+          <!-- <li><a href="about.html" class="text-white text-decoration-none">About Us</a></li> -->
+          <!-- <li><a href="#service" class="text-white text-decoration-none">Services</a></li> -->
+          <li><a href="contact.html" class="text-white text-decoration-none">Contact</a></li>
+          <li><a href="privacy.html" class="text-white text-decoration-none">Privacy Policy</a></li>
+          <li><a href="terms.html" class="text-white text-decoration-none">Terms & Conditions</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact Details -->
+      <div class="col-md-4 mb-4">
+        <h5 class="text-warning mb-3">Contact Us</h5>
+        <p><i class="bi bi-geo-alt-fill text-warning"></i> Chennai, India</p>
+        <p><i class="bi bi-envelope-fill text-warning"></i> info@peacock.org.in</p>
+        <p><i class="bi bi-telephone-fill text-warning"></i> +91 9363963411</p>
+        <p><i class="bi bi-telephone-fill text-warning"></i> +91 4431520110</p>
+
+        <div class="mt-3">
+          <a href="#" class="text-white me-3"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="text-white me-3"><i class="bi bi-linkedin"></i></a>
+          <a href="#" class="text-white me-3"><i class="bi bi-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <hr class="border-light">
+
+    <div class="text-center">
+      <p class="mb-0">
+        &copy; 2025 Peacock Wealth Management. All rights reserved.<br>
+       
+      </p>
+    </div>
+  </div>
+</footer>
+
+
+<script>
+window.addEventListener("scroll", () => {
+  document.querySelectorAll('.reveal').forEach(r => {
+    const top = r.getBoundingClientRect().top;
+    if(top < window.innerHeight - 100) r.classList.add("active");
+  });
+});
+</script>
+
+</body>
+</html>

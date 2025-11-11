@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alternative Investment Funds (AIF) | Peacock Wealth Management</title>
+ <link rel="stylesheet" href="{{ url_for('static', filename='css/aif.css') }}">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+   <!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Bootstrap JS (for mobile menu toggle) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+</head>
+
+<body>
+  <!-- NAVBAR -->
+   <nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container">
+    <!-- Logo -->
+    <a class="navbar-brand d-flex align-items-center" href="home.html">
+      <img src="{{url_for('static', filename=img/peacock.png)}}" alt="Peacock Wealth Management Logo" class="logo me-2">
+    </a>
+
+    <!-- Mobile Toggle -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Menu Items -->
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+        <!-- <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li> -->
+          <!-- Services Dropdown -->
+        <li class="dropdown" class="nav-item">
+          <a href="#" class="nav-link">Services ▾</a>
+          <div class="dropdown-content">
+            <div class="dropdown-grid">
+               <a href="">Investment & Advisory</a>
+              <a href="demat.html">Demat</a>
+               <a href="equity.html">Equity Advisory</a>
+              <a href="pms.html">Portfolio Management</a>
+              <a href="mut.html">Mutual Fund Advisory</a>
+               <a href="aif.html">Alternative Investment Fund</a>
+               <a href="com.html">Commodities & Precious Metals Advisory</a>
+              <a href="un.html">Unlisted Shares & Pre-IPO Intelligence</a>
+              <a href="so.html">Sovereign Gold Bonds (SGB)</a>
+              <a href="ipo.html">Initial Public Offering (IPO)</a>
+              <a href="ncd.html">Non Convertible Debentures (NCD)</a>
+              <a href="fd.html">Fixed Deposit</a>
+               <a href=" ">Debt & Income Instruments</a>
+               <a href=" ">Wealth Strategy & Planning</a>
+               <a href=" ">Designing disciplined growth with purpose.</a>
+              <a href="financial.html">Financial & Goal Planning</a>
+               <a href="wea.html">Wealth Desk / Portfolio Review</a>
+              <a href="np.html">National Pension System</a>
+              <a href="las.html">Loan Against Shares</a>
+              <a href="loans.html">Loan Products & Structured Financing</a>
+              <a href="in.html">Insurance & Risk Protection</a>
+              <a href="sec.html">Secondary Market Department</a>
+              <a href="  ">Market Research & Sectoral Insights</a>
+              <a href="  ">Macro Economic Reports</a>
+              <a href="  ">Markets & Instruments</a>
+              <a href="forex.html">Forex Advisory & Market Insights</a>
+              <a href="  ">Global access. Local compliance. </a>
+              <a href="  ">Macro analysis, INR-linked pair trends, and currency risk strategies.</a>
+              <a href="  ">Intelligent execution.</a>
+              <a href="currency.html">Currency Exchange</a>
+              <a href="  ">Authorised currency conversion and remittance guidance.</a>
+            </div>
+          </div>
+        </li>
+   
+          <li class="nav-item"><a class="nav-link" href="pricing.html">Fee Structure</a></li>
+        <li class="nav-item"><a class="nav-link" href="co.html">Course</a></li>
+        <!-- <li class="nav-item"><a class="nav-link" href="about.html">Ab</a></li> -->
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+         <li class="nav-item"><a class="nav-link active" href="aif.html">AIF</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  <!-- HERO SECTION -->
+  
+<section class="hero">
+  <div class="hero-content">
+    <div class="hero-text">
+      <h1>Alternative Investment Funds (AIF)</h1>
+      <p> Beyond the Conventional. Into the Extraordinary.</p>
+      <a href="contact.html" class="btn-primary">Contact Us for More Details</a>
+    </div>
+    <div class="hero-image">
+      <img src="{{url_for('static', filename=img/y26.jpg)}}" alt="">
+    </div>
+  </div>
+</section>
+  <!-- UNDERSTANDING AIF -->
+  <section class="info fade">
+    <div class="wrap">
+      <div class="icon-title">
+        <i class="fas fa-globe"></i>
+        <h2>Understanding Alternative Investment Funds (AIFs)</h2>
+      </div>
+      <p>
+        For investors who’ve mastered the basics, true diversification begins beyond the public markets.
+At Peacock Wealth Management, our AIF solutions offer access to sophisticated investment opportunities that combine innovation, strategy, and institutional-level precision.
+
+      </p>
+      <p>
+       Through due diligence, manager evaluation, and thematic research, we ensure that every AIF allocation complements your equity, debt, and global exposure — strengthening your overall wealth structure.
+</p>
+    </div>
+  </section>
+
+  <!-- PURPOSE -->
+  <section class="info fade alt-bg">
+    <div class="wrap">
+      <div class="icon-title">
+        <i class="fas fa-bullseye"></i>
+        <h2>Our Philosophy</h2>
+      </div>
+      <p>
+        We believe alternative investments aren’t about complexity — they’re about clarity in opportunity.
+Our advisory team handpicks funds and strategies that are transparent, compliant, and aligned with your broader portfolio vision.
+
+      </p>
+      <p>
+        Ideal for investors seeking diversification, long-term capital appreciation, and access to opportunities traditionally available only to institutions.
+      </p>
+    </div>
+  </section>
+
+  <!-- CATEGORIES -->
+  <section class="info fade">
+    <div class="wrap">
+      <div class="icon-title">
+        <i class="fas fa-layer-group"></i>
+        <h2>Our AIF Spectrum</h2>
+      </div>
+      <div class="aif-categories">
+        <div class="cat-card">
+          <i class="fas fa-lightbulb"></i>
+          <h3 style="color:#000000;">Growth Focused</h3>
+          <p>Investments in start-ups, early-stage ventures, and infrastructure — driving India’s innovation economy.</p>
+        </div>
+        <div class="cat-card">
+          <i class="fas fa-hand-holding-usd"></i>
+          <h3 style="color:#000000;">Balanced Opportunities</h3>
+          <p>Private equity, real estate, and debt funds offering consistent risk-adjusted returns.</p>
+        </div>
+        <div class="cat-card">
+          <i class="fas fa-exchange-alt"></i>
+          <h3 style="color:#000000;">Market-Linked Strategies</h3>
+          <p>Long-short, structured equity, and arbitrage strategies for tactical allocation and hedging.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- PEACOCK APPROACH -->
+  <section class="info fade alt-bg">
+    <div class="wrap">
+      <div class="icon-title">
+        <i class="fas fa-search-dollar"></i>
+        <h2>Our Edge</h2>
+      </div>
+      <p>
+       At Peacock, we bridge the gap between exclusive access and practical execution.
+Our AIF partnerships are chosen not for brand visibility but for credibility, transparency, and performance integrity.</p>
+      <p>
+        From onboarding to performance monitoring, we offer <strong>end-to-end support</strong> to make your alternative investment journey seamless and rewarding.
+      </p>
+    </div>
+  </section>
+
+  <!-- CONTACT BOX -->
+  
+  <section class="contact-cta reveal">  <section class="contact-cta">
+    <h3>Contact for More Details</h3>
+    <p>Explore exclusive AIF opportunities with Peacock Wealth Management.  
+        Connect with our advisory team for personalized investment guidance..</p>
+    <!-- <a href="contact.html" class="btn-secondary">contact us →</a> --><br>
+  <a href="contact.html" class="btn-primary">Contact Us for More Details</a>
+  </section><br><br>
+  <hr class="border-light">
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer  text-white pt-5 pb-3" style="background-color:#000000;">
+  <div class="container">
+    <div class="row text-center text-md-start">
+      
+      <!-- Company Info -->
+      <div class="col-md-4 mb-4">
+        <h5 class="text-warning mb-3">Peacock Wealth Management</h5>
+        <p>
+          Your trusted partner in financial growth, investment planning, and wealth management.  
+          We help you build a secure and prosperous future.
+        </p>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="col-md-4 mb-4">
+        <h5 class="text-warning mb-3">Quick Links</h5>
+        <ul class="list-unstyled">
+          <li><a href="home.html" class="text-white text-decoration-none">Home</a></li>
+          <li><a href="about.html" class="text-white text-decoration-none">About Us</a></li>
+          <li><a href="services.html" class="text-white text-decoration-none">Services</a></li>
+          <li><a href="contact.html" class="text-white text-decoration-none">Contact</a></li>
+          <li><a href="privacy.html" class="text-white text-decoration-none">Privacy Policy</a></li>
+          <li><a href="terms.html" class="text-white text-decoration-none">Terms & Conditions</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact Details -->
+      <div class="col-md-4 mb-4">
+        <h5 class="text-warning mb-3">Contact Us</h5>
+        <p><i class="bi bi-geo-alt-fill text-warning"></i> Chennai, India</p>
+        <p><i class="bi bi-envelope-fill text-warning"></i> info@peacock.org.in</p>
+        <p><i class="bi bi-telephone-fill text-warning"></i> +91 9363963411</p>
+        <p><i class="bi bi-telephone-fill text-warning"></i> +91 9363963411</p>
+
+        <div class="mt-3">
+          <a href="#" class="text-white me-3"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="text-white me-3"><i class="bi bi-linkedin"></i></a>
+          <a href="#" class="text-white me-3"><i class="bi bi-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <hr class="border-light">
+
+    <div class="text-center">
+      <p class="mb-0">
+        &copy; 2025 Peacock Wealth Management. All rights reserved.<br>
+        
+      </p>
+    </div>
+  </div>
+</footer>
+
+
+  <!-- Fade Animation JS -->
+  <script>
+    const faders = document.querySelectorAll('.fade');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) entry.target.classList.add('show');
+      });
+    });
+    faders.forEach(el => observer.observe(el));
+  </script>
+  <script>
+  const revealElements = document.querySelectorAll('.reveal, .slide-left, .slide-right');
+
+  const revealOnScroll = () => {
+    const windowHeight = window.innerHeight;
+    revealElements.forEach(el => {
+      const rect = el.getBoundingClientRect();
+      const revealPoint = 120; // trigger earlier/later
+      if (rect.top < windowHeight - revealPoint) {
+        el.classList.add('active');
+      }
+    });
+  };
+
+  window.addEventListener('scroll', revealOnScroll);
+  window.addEventListener('resize', revealOnScroll);
+  // run once on load
+  requestAnimationFrame(revealOnScroll);
+</script>
+
+
+</body>
+</html>

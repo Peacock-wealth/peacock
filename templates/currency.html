@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Currency Exchange | Peacock Wealth Management</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/currency.css') }}">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Bootstrap JS (for mobile menu toggle) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+</head>
+<body>
+
+  <!-- Header -->
+  <nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container">
+    <!-- Logo -->
+    <a class="navbar-brand d-flex align-items-center" href="home.html">
+      <img src="{{url_for('static', filename=img/peacock.png)}}" alt="Peacock Wealth Management Logo" class="logo me-2">
+    </a>
+
+    <!-- Mobile Toggle -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Menu Items -->
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link " href="home.html">Home</a></li>
+        <!-- <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li> -->
+          <!-- Services Dropdown -->
+        <li class="dropdown" class="nav-item">
+          <a href="#" class="nav-link">Services ▾</a>
+          <div class="dropdown-content">
+            <div class="dropdown-grid">
+               <a href="">Investment & Advisory</a>
+              <a href="demat.html">Demat</a>
+               <a href="equity.html">Equity Advisory</a>
+              <a href="pms.html">Portfolio Management</a>
+              <a href="mut.html">Mutual Fund Advisory</a>
+               <a href="aif.html">Alternative Investment Fund</a>
+               <a href=" com.html">Commodities & Precious Metals Advisory</a>
+              <a href="un.html">Unlisted Shares & Pre-IPO Intelligence</a>
+              <a href="so.html">Sovereign Gold Bonds (SGB)</a>
+              <a href="ipo.html">Initial Public Offering (IPO)</a>
+              <a href="ncd.html">Non Convertible Debentures (NCD)</a>
+              <a href="fd.html">Fixed Deposit</a>
+               <a href=" ">Debt & Income Instruments</a>
+               <a href=" ">Wealth Strategy & Planning</a>
+               <a href=" ">Designing disciplined growth with purpose.</a>
+              <a href="financial.html">Financial & Goal Planning</a>
+               <a href="wea.html">Wealth Desk / Portfolio Review</a>
+              <a href="np.html">National Pension System</a>
+              <a href="las.html">Loan Against Shares</a>
+              <a href="loans.html">Loan Products & Structured Financing</a>
+              <a href="in.html">Insurance & Risk Protection</a>
+              <a href="sec.html">Secondary Market Department</a>
+              <a href="  ">Market Research & Sectoral Insights</a>
+              <a href="  ">Macro Economic Reports</a>
+              <a href="  ">Markets & Instruments</a>
+              <a href="forex.html">Forex Advisory & Market Insights</a>
+              <a href="  ">Global access. Local compliance. </a>
+              <a href="  ">Macro analysis, INR-linked pair trends, and currency risk strategies.</a>
+              <a href="  ">Intelligent execution.</a>
+              <a href="currency.html">Currency Exchange</a>
+              <a href="  ">Authorised currency conversion and remittance guidance.</a>
+            </div>
+          </div>
+        </li>
+   
+          <li class="nav-item"><a class="nav-link" href="pricing.html">Fee Structure</a></li>
+        <li class="nav-item"><a class="nav-link" href="co.html">Course</a></li>
+
+        <!-- <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li> -->
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+         <li class="nav-item"><a class="nav-link active" href="currency.html">Currency Exchange</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <div class="hero-text">
+        <h2>Fast & Secure Currency Exchange Services</h2>
+        <p>Get the best exchange rates with transparent pricing and trusted service.
+
+</p>
+        <a href="contact.html" class="btn-primary">Contact Us for More Details</a>
+      </div>
+      <div class="hero-image">
+        <img src="img/currency.png" alt="Currency Exchange Illustration">
+      </div>
+    </div>
+  </section>
+<!-- Currency Exchange — Detailed Services Section -->
+<section class="currency-exchange" style="background-color:white;">
+  <h2 class="section-title">Currency Exchange Services</h2>
+
+  <div class="exchange-item">
+    <div class="exchange-text">
+      <h3>Foreign Currency Cash (Notes)</h3>
+      <p>When you travel abroad, having a small amount of foreign currency in cash is always essential for daily expenses, transport, and local purchases.</p>
+      <ul>
+        <li>Competitive and real-time exchange rates</li>
+        <li>Availability of all major global currencies</li>
+        <li>RBI-approved transactions</li>
+        <li>Complete documentation and compliance</li>
+        <li>Quick processing and doorstep convenience</li>
+      </ul>
+    </div>
+    <div class="exchange-img">
+      <img src="{{url_for('static', filename=img/y30.jpg)}}" alt="Foreign Currency Cash">
+    </div>
+  </div>
+
+  <div class="exchange-item reverse">
+    <div class="exchange-text">
+      <h3>Prepaid Forex Travel Cards</h3>
+      <p>A secure and modern alternative to carrying cash abroad — load multiple currencies, make payments overseas, and withdraw money safely.</p>
+      <ul>
+        <li>Locked-in exchange rates</li>
+        <li>Up to 15 global currencies on one card</li>
+        <li>Instant reload via online portal</li>
+        <li>24x7 support and Chip-PIN security</li>
+      </ul>
+    </div>
+    <div class="exchange-img">
+      <img src="{{url_for('static', filename=img/y28.jpg)}}" alt="Forex Travel Card">
+    </div>
+  </div>
+
+  <div class="exchange-item">
+    <div class="exchange-text">
+      <h3>International Money Transfers</h3>
+      <p>Transfer or receive funds globally through SWIFT and wire transfers for education, business, or personal needs.</p>
+      <ul>
+        <li>University & College Fee Payments</li>
+        <li>Family Maintenance & Medical Transfers</li>
+        <li>Property Investments Abroad</li>
+        <li>Trade Remittances for Businesses</li>
+      </ul>
+    </div>
+    <div class="exchange-img">
+      <img src="{{url_for('static', filename=img/y23.jpg)}}" alt="International Money Transfer">
+    </div>
+  </div>
+
+  <div class="exchange-item reverse">
+    <div class="exchange-text">
+      <h3>Foreign Currency Demand Drafts (DDs)</h3>
+      <p>Reliable option for university applications, business deposits, or security payments through authorized partners.</p>
+      <ul>
+        <li>Safe and traceable payments</li>
+        <li>Accepted by institutions worldwide</li>
+        <li>Cost-effective and compliant</li>
+      </ul>
+    </div>
+    <div class="exchange-img">
+      <img src="{{url_for('static', filename=img/y16.jpg)}}" alt="Foreign Currency DD">
+    </div>
+  </div>
+
+  <div class="exchange-item">
+    <div class="exchange-text">
+      <h3>Corporate Currency Exchange Services</h3>
+      <p>Comprehensive forex support for businesses to manage global operations efficiently.</p>
+      <ul>
+        <li>Import & export currency payments</li>
+        <li>Overseas vendor settlements</li>
+        <li>Employee travel forex management</li>
+        <li>Hedging and currency risk advisory</li>
+      </ul>
+    </div>
+    <div class="exchange-img">
+      <img src="{{url_for('static', filename=img/y22.jpg)}}" alt="Corporate Currency Exchange">
+    </div>
+  </div>
+</section>
+
+        
+  <!-- What We Offer -->
+  <section class="offers">
+    <h3>What We Offer</h3>
+    <div class="offer-cards">
+      <div class="card">
+        <img src="{{url_for('static', filename=img/cu1.png)}}" alt="Multi-Currency Icon">
+        <h4>Multi-Currency Exchange</h4>
+        <p>Exchange major global currencies instantly with trusted partners.</p>
+      </div>
+      <div class="card">
+        <img src="{{url_for('static', filename=img/cu2.png)}}" alt="Rates Icon">
+        <h4>Best Market Rates</h4>
+        <p>Enjoy real-time updated rates with no hidden charges.</p>
+      </div>
+      <div class="card">
+        <img src="{{url_for('static', filename=img/cu3.png)}}" alt="Secure Icon">
+        <h4>Secure Transactions</h4>
+        <p>100% safe, compliant, and verified exchange process.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works -->
+  <section class="our-process">
+  <div class="process-header">
+    <h2>Our Process – Transparent, Efficient & Secure</h2>
+    <p>Every transaction at Peacock Wealth Management follows a streamlined and transparent process to ensure trust, compliance, and excellence.</p>
+  </div>
+
+  <div class="process-steps">
+    <div class="step">
+      <div class="step-icon">🧭</div>
+      <h3>1. Client Requirement Analysis</h3>
+      <p>We understand your purpose — travel, education, trade, or investment — to determine the right currency service and compliance needs.</p>
+    </div>
+
+    <div class="step">
+      <div class="step-icon">💱</div>
+      <h3>2. Rate Confirmation</h3>
+      <p>Receive real-time, market-linked exchange rates with full transparency before your transaction is processed.</p>
+    </div>
+
+    <div class="step">
+      <div class="step-icon">📋</div>
+      <h3>3. Compliance Verification</h3>
+      <p>All KYC, FEMA, and RBI documents are verified carefully to ensure complete legal and regulatory compliance.</p>
+    </div>
+
+    <div class="step">
+      <div class="step-icon">⚙️</div>
+      <h3>4. Transaction Execution</h3>
+      <p>Your currency exchange or remittance is completed through RBI-authorized and secure banking channels.</p>
+    </div>
+
+    <div class="step">
+      <div class="step-icon">📨</div>
+      <h3>5. Post-Transaction Support</h3>
+      <p>We provide receipts, confirmations, and continued guidance for your future international transactions.</p>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Why Choose Us -->
+  <!-- <section class="why">
+    <h3>Why Choose Us</h3>
+    <ul>
+      <li>✔ RBI-authorized exchange partner</li>
+      <li>✔ Instant digital receipts</li>
+      <li>✔ Dedicated customer support</li>
+      <li>✔ 100% transparent pricing</li>
+    </ul>
+  </section> -->
+
+  <!-- Contact CTA -->
+  <section class="contact-cta">
+    <h3>Need to exchange currency today?</h3>
+    <p>For personalized rates or queries, contact our support team.</p>
+    <a href="contact.html" class="btn-secondary">Contact Us for More Details →</a><br><br>
+    <hr class="border-light">
+
+  </section>
+
+  <!-- Footer -->
+ <footer class="footer  text-white pt-5 pb-3" style="background-color:#000000;">
+  <div class="container">
+    <div class="row text-center text-md-start">
+      
+      <!-- Company Info -->
+      <div class="col-md-4 mb-4">
+        <h5 class="text-warning mb-3">Peacock Wealth Management</h5>
+        <p>
+          Your trusted partner in financial growth, investment planning, and wealth management.  
+          We help you build a secure and prosperous future.
+        </p>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="col-md-4 mb-4">
+        <h5 class="text-warning mb-3">Quick Links</h5>
+        <ul class="list-unstyled">
+          <li><a href="home.html" class="text-white text-decoration-none">Home</a></li>
+          <!-- <li><a href="about.html" class="text-white text-decoration-none">About Us</a></li> -->
+          <li><a href="services.html" class="text-white text-decoration-none">Services</a></li>
+          <li><a href="contact.html" class="text-white text-decoration-none">Contact</a></li>
+          <li><a href="privacy.html" class="text-white text-decoration-none">Privacy Policy</a></li>
+          <li><a href="terms.html" class="text-white text-decoration-none">Terms & Conditions</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact Details -->
+      <div class="col-md-4 mb-4">
+        <h5 class="text-warning mb-3">Contact Us</h5>
+        <p><i class="bi bi-geo-alt-fill text-warning"></i> Chennai, India</p>
+        <p><i class="bi bi-envelope-fill text-warning"></i> info@peacock.org.in</p>
+        <p><i class="bi bi-telephone-fill text-warning"></i> +91 9363963411</p>
+        <p><i class="bi bi-telephone-fill text-warning"></i> +914431520110</p>
+
+        <div class="mt-3">
+          <a href="#" class="text-white me-3"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="text-white me-3"><i class="bi bi-linkedin"></i></a>
+          <a href="#" class="text-white me-3"><i class="bi bi-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <hr class="border-light">
+
+    <div class="text-center">
+      <p class="mb-0">
+        &copy; 2025 Peacock Wealth Management. All rights reserved.<br>
+       
+      </p>
+    </div>
+  </div>
+</footer>
+
+
+</body>
+</html>

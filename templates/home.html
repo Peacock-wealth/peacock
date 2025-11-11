@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Peacock Wealth Management</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+<!-- <link href="https://fonts.googleapis.com/css2?family=Zalando+Sans+Expanded:wght@200..900&display=swap" rel="stylesheet"> -->
+<!-- <style>
+@import url('https://fonts.googleapis.com/css2?family=Poller+One&display=swap');
+</style> -->
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Peta:wght@100..900&display=swap');
+</style>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
+ <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+<!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet"> -->
+</head>
+<body>
+
+  <!-- Navbar -->
+ 
+   <nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container">
+    <!-- Logo -->
+    <a class="navbar-brand d-flex align-items-center" href="home.html">
+      <img src="{{ url_for('static', filename='img/peacock.png') }}" alt="Peacock Wealth Management Logo" class="logo me-2">
+    </a>
+
+    <!-- Mobile Toggle -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Menu Items -->
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link active" href="home.html">Home</a></li>
+      <!-- <li class="nav-item"><a class="nav-link" href="services.html" >Services</a></li> -->
+       <!-- Services Dropdown -->
+        <li class="dropdown" class="nav-item">
+          <a href="#" class="nav-link">Services ▾</a>
+          <div class="dropdown-content">
+            <div class="dropdown-grid">
+               <a href="">Investment & Advisory</a>
+              <a href="demat.html">Demat</a>
+               <a href="equity.html">Equity Advisory</a>
+              <a href="pms.html">Portfolio Management</a>
+              <a href="mut.html">Mutual Fund Advisory</a>
+               <a href="aif.html">Alternative Investment Fund</a>
+               <a href="com.html ">Commodities & Precious Metals Advisory</a>
+              <a href="un.html">Unlisted Shares & Pre-IPO Intelligence</a>
+              <a href="so.html">Sovereign Gold Bonds (SGB)</a>
+              <a href="ipo.html">Initial Public Offering (IPO)</a>
+              <a href="ncd.html">Non Convertible Debentures (NCD)</a>
+              <a href="fd.html">Fixed Deposit</a>
+               <a href=" ">Debt & Income Instruments</a>
+               <a href=" ">Wealth Strategy & Planning</a>
+               <a href=" ">Designing disciplined growth with purpose.</a>
+              <a href="financial.html">Financial & Goal Planning</a>
+               <a href="wea.html">Wealth Desk / Portfolio Review</a>
+              <a href="np.html">National Pension System</a>
+              <a href="las.html">Loan Against Shares</a>
+              <a href="loans.html">Loan Products & Structured Financing</a>
+              <a href="in.html">Insurance & Risk Protection</a>
+              <a href="sec.html">Secondary Market Department</a>
+              <a href="  ">Market Research & Sectoral Insights</a>
+              <a href="  ">Macro Economic Reports</a>
+              <a href="  ">Markets & Instruments</a>
+              <a href="forex.html">Forex Advisory & Market Insights</a>
+              <a href="  ">Global access. Local compliance. </a>
+              <a href="  ">Macro analysis, INR-linked pair trends, and currency risk strategies.</a>
+              <a href="  ">Intelligent execution.</a>
+              <a href="currency.html">Currency Exchange</a>
+              <a href="  ">Authorised currency conversion and remittance guidance.</a>
+            </div>
+          </div>
+        </li>
+   
+
+          <li class="nav-item"><a class="nav-link" href="pricing.html">Fee Structure</a></li>
+        <li class="nav-item"><a class="nav-link" href="co.html">Course</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+ 
+
+  <!-- hero section -->
+  <section id="home" class="hero text-center">
+    <img src=" {{url_for('static', filename='img/m1.jpg)}}" class="active">
+    <img src=" {{url_for('static', filename='img/m2.jpg)}}">
+    <img src=" {{url_for('static', filename='img/m3.jpg)}}">
+    <div class="overlay"></div>
+    <div class="container hero-content">
+      <h1 style="font-size: 55px;">The turn that leads to legacy<br> built on trust, driven by wisdom.</h1>
+      <!-- <p>Building your wealth with trust, transparency & expertise.</p> -->
+      <!-- <a href="#about" class="btn btn-primary mt-3">talk to us</a> -->
+    </div>
+  </section>
+
+
+ 
+<!-- Services Section -->
+<section class="service-advantage py-5" >
+  <div class="container text-center">
+    <h2 class="section-title mb-5" class="zalando-sans-expanded-heading" style="font-size:40px; font-family:Lexend Peta, sans-serif ;color: rgb(60, 59, 59);">Our expertise</h2>
+
+
+    <div class="row g-4">
+     <!-- Service 1 -->
+      <div class="col-md-4">
+        <div class="service-item">
+          <a href="demat.html"  style="text-decoration: none;" ><img src=" {{url_for('static', filename='img/y3.jpg)}}" alt="Demat Account" class="service-img mb-4">
+          <h4 class="service-title" >Demat Account</h4></a>
+          <p class="service-text" style="text-align: justify;">
+            <!-- Your secure gateway to the stock market — we simplify Demat account opening and management
+            with trusted partners. -->
+          </p>
+        <!-- <a href="demat.html"  ><span class="material-icons" >arrow_forward</span></a> -->
+
+        </div>
+      </div>
+
+
+    
+      <!-- Service 2 -->
+      <div class="col-md-4">
+        <div class="service-item">
+         <a href="equity.html"  style="text-decoration: none;"> <img src=" {{url_for('static', filename='img/y15.jpg)}}" alt="Equity Advisory" class="service-img mb-4">
+          <h4 class="service-title" >Equity Advisory </h4></a>
+          <p class="service-text" style="text-align: justify;">
+            <!-- Equity investing is more than a pursuit of returns — it’s an art guided by insight, discipline, and timing.
+At Peacock Wealth Management, we transform market complexity into clarity, helping you participate in opportunities that align with your vision and values. -->
+
+          </p>
+       
+        </div>
+      </div>
+
+
+
+       <!-- Service 3 -->
+      <div class="col-md-4">
+        <div class="service-item">
+         <a href="pms.html"  style="text-decoration: none;" > <img src="{{ url_for('static', filename='img/y14.jpg)}}" alt="Portfolio Management" class="service-img mb-4">
+          <h4 class="service-title" >Portfolio Management</h4></a>
+          <!-- <p class="service-text">
+            For high-net-worth individuals, our PMS offers personalized investment strategies
+            aimed at superior performance and long-term wealth creation.
+          </p> -->
+        <!-- <a href="pms.html"  ><span class="material-icons" >arrow_forward</span></a> -->
+
+        </div>
+      </div>
+
+      <!-- Service 4 -->
+      <div class="col-md-4">
+        <div class="service-item">
+          <a href="mut.html"  style="text-decoration: none;" ><img src=" {{url_for('static', filename='img/y22.jpg)}}" alt="Mutual Fund" class="service-img mb-4">
+          <h4 class="service-title" >Mutual Fund Investments</h4></a>
+          <!-- <p class="service-text">
+            We offer goal-based mutual fund planning across equity, debt, hybrid, and index funds
+            — tailored to help you achieve consistent long-term growth.
+          </p> -->
+        <!-- <a href="mut.html"  ><span class="material-icons" >arrow_forward</span></a> -->
+
+        </div>
+      </div>
+     
+      <!-- Service 5-->
+      <div class="col-md-4">
+        <div class="service-item">
+         <a href="aif.html"  style="text-decoration: none;" > <img src=" {{url_for('static', filename='img/y28.jpg)}}" alt="Portfolio Management" class="service-img mb-4">
+          <h4 class="service-title" >Alternative Investment Funds (AIF)</h4></a>
+          <!-- <p class="service-text">
+            For high-net-worth individuals, our PMS offers personalized investment strategies
+            aimed at superior performance and long-term wealth creation.
+          </p> -->
+        <!-- <a href="pms.html"  ><span class="material-icons" >arrow_forward</span></a> -->
+
+        </div>
+      </div>
+
+      <!-- Service 6-->
+      <div class="col-md-4">
+        <div class="service-item">
+         <a href="com.html"  style="text-decoration: none;" > <img src="{{url_for('static', filename='img/can.png)}}" alt="Portfolio Management" class="service-img mb-4">
+          <h4 class="service-title" >Commodities & Precious Metals Advisory</h4></a>
+          <!-- <p class="service-text">
+            For high-net-worth individuals, our PMS offers personalized investment strategies
+            aimed at superior performance and long-term wealth creation.
+          </p> -->
+        <!-- <a href="pms.html"  ><span class="material-icons" >arrow_forward</span></a> -->
+
+        </div>
+      </div>
+
+       <!-- Service 7 -->
+
+       <div class="col-md-4"  >
+        <div  class="service-item"  >
+         <a href="un.html"  style="text-decoration: none;" > <img src=" {{url_for('static', filename='img/im1.png)}}" alt="Portfolio Management" class="service-img mb-4">
+          <h4 class="service-title" >Unlisted Shares & Pre-IPO Intelligence</h4></a>
+          <!-- <p class="service-text">
+            For high-net-worth individuals, our PMS offers personalized investment strategies
+            aimed at superior performance and long-term wealth creation.
+          </p> -->
+        <!-- <a href="pms.html"  ><span class="material-icons" >arrow_forward</span></a> -->
+
+        </div>
+      </div>
+
+       <!-- Service 8-->
+
+       <div class="col-md-4"  >
+        <div  class="service-item"  >
+         <a href="so.html"  style="text-decoration: none;" > <img src=" {{url_for('static', filename='img/im9.png)}}" alt="Portfolio Management" class="service-img mb-4">
+          <h4 class="service-title" >Sovereign Gold Bonds</h4></a>
+          <!-- <p class="service-text">
+            For high-net-worth individuals, our PMS offers personalized investment strategies
+            aimed at superior performance and long-term wealth creation.
+          </p> -->
+        <!-- <a href="pms.html"  ><span class="material-icons" >arrow_forward</span></a> -->
+
+        </div>
+      </div>
+
+
+     <!-- Service 9 -->
+
+       <div class="col-md-4"  >
+        <div  class="service-item"  >
+         <a href="ipo.html"  style="text-decoration: none;" > <img src=" {{url_for('static', filename='img/y4.jpg)}}" alt="Portfolio Management" class="service-img mb-4">
+          <h4 class="service-title" >Initial Public Offering</h4></a>
+          <!-- <p class="service-text">
+            For high-net-worth individuals, our PMS offers personalized investment strategies
+            aimed at superior performance and long-term wealth creation.
+          </p> -->
+        <!-- <a href="pms.html"  ><span class="material-icons" >arrow_forward</span></a> -->
+
+        </div>
+      </div>
+
+      <!-- Hidden Services -->
+      
+      
+      
+       <!-- Service 10 -->
+       <div class="col-md-4"  >
+        <div class="service-card hidden" class="service-item"  >
+         <a href="ncd.html"  style="text-decoration: none;" > <img src=" {{url_for('static', filename='img/y14.jpg)}}" alt="Portfolio Management" class="service-img mb-4">
+          <h4 class="service-title" >Non-Convertible Debentures (NCD)</h4></a>
+          <!-- <p class="service-text">
+            For high-net-worth individuals, our PMS offers personalized investment strategies
+            aimed at superior performance and long-term wealth creation.
+          </p> -->
+        <!-- <a href="pms.html"  ><span class="material-icons" >arrow_forward</span></a> -->
+
+        </div>
+      </div>
+
+       <!-- Service 11 -->
+       <div class="col-md-4"  >
+        <div class="service-card hidden" class="service-item"  >
+         <a href="fd.html"  style="text-decoration: none;" > <img src=" {{url_for('static', filename='img/y12.jpg)}}" alt="Portfolio Management" class="service-img mb-4">
+          <h4 class="service-title" >Fixed Deposit</h4></a>
+          <!-- <p class="service-text">
+            For high-net-worth individuals, our PMS offers personalized investment strategies
+            aimed at superior performance and long-term wealth creation.
+          </p> -->
+        <!-- <a href="pms.html"  ><span class="material-icons" >arrow_forward</span></a> -->
+
+        </div>
+      </div>
+
+      
+      
+      <!-- Service 12 -->
+      <div class="col-md-4">
+        <div   class="service-card hidden" class="service-item">
+         <a href="financial.html"  style="text-decoration: none;" > <img src=" {{url_for('static', filename='img/y18.jpg)}}" alt="Portfolio Management" class="service-img mb-4">
+          <h4 class="service-title" >Financial & Goal Planning</h4></a>
+          <!-- <p class="service-text">
+            For high-net-worth individuals, our PMS offers personalized investment strategies
+            aimed at superior performance and long-term wealth creation.
+          </p> -->
+        <!-- <a href="pms.html"  ><span class="material-icons" >arrow_forward</span></a> -->
+
+        </div>
+      </div>
+
+      <!-- Service 13 -->
+
+       <div class="col-md-4"  >
+        <div class="service-card hidden" class="service-item"  >
+         <a href="wea.html"  style="text-decoration: none;" > <img src="{{url_for('static', filename='img/y16.jpg)}}" alt="Portfolio Management" class="service-img mb-4">
+          <h4 class="service-title" >Wealth Desk</h4></a>
+          <!-- <p class="service-text">
+            For high-net-worth individuals, our PMS offers personalized investment strategies
+            aimed at superior performance and long-term wealth creation.
+          </p> -->
+        <!-- <a href="pms.html"  ><span class="material-icons" >arrow_forward</span></a> -->
+
+        </div>
+      </div>
+
+       <!-- Service 14 -->
+
+       <div class="col-md-4"  >
+        <div class="service-card hidden" class="service-item"  >
+         <a href="np.html"  style="text-decoration: none;" > <img src="{{url_for('static', filename='img/im2.png)}}" alt="Portfolio Management" class="service-img mb-4">
+          <h4 class="service-title" >National Pension System</h4></a>
+          <!-- <p class="service-text">
+            For high-net-worth individuals, our PMS offers personalized investment strategies
+            aimed at superior performance and long-term wealth creation.
+          </p> -->
+        <!-- <a href="pms.html"  ><span class="material-icons" >arrow_forward</span></a> -->
+
+        </div>
+      </div>
+
+
+       <!-- Service 15 -->
+       <div class="col-md-4"  >
+        <div class="service-card hidden" class="service-item"  >
+         <a href="las.html"  style="text-decoration: none;" > <img src=" {{url_for('static', filename='img/y5.jpg)}}" alt="Portfolio Management" class="service-img mb-4">
+          <h4 class="service-title" >Loans Against Shares (LAS)</h4></a>
+          <!-- <p class="service-text">
+            For high-net-worth individuals, our PMS offers personalized investment strategies
+            aimed at superior performance and long-term wealth creation.
+          </p> -->
+        <!-- <a href="pms.html"  ><span class="material-icons" >arrow_forward</span></a> -->
+
+        </div>
+      </div>
+
+       <!-- Service 16 -->
+
+       <div class="col-md-4"  >
+        <div class="service-card hidden" class="service-item"  >
+         <a href="loans.html"  style="text-decoration: none;" > <img src="{{url_for('static', filename='img/y13.jpg)}}" alt="Portfolio Management" class="service-img mb-4">
+          <h4 class="service-title" >Loans Products</h4></a>
+          <!-- <p class="service-text">
+            For high-net-worth individuals, our PMS offers personalized investment strategies
+            aimed at superior performance and long-term wealth creation.
+          </p> -->
+        <!-- <a href="pms.html"  ><span class="material-icons" >arrow_forward</span></a> -->
+
+        </div>
+      </div>
+
+      <!-- Service 17 -->
+      <div class="col-md-4">
+        <div  class="service-card hidden" class="service-item">
+          <a href="in.html"  style="text-decoration: none;" ><img src=" {{url_for('static', filename='img/y27.jpg)}}" alt="Insurance" class="service-img mb-4">
+          <h4 class="service-title" >Insurance & Risk Protection</h4></a>
+          <!-- <p class="service-text">
+            Secure your future with life and investment-linked insurance solutions.
+            Our experts guide you to choose the right plan for your financial goals.
+          </p> -->
+        <!-- <a href="in.html"  ><span class="material-icons" >arrow_forward</span></a> -->
+
+        </div>
+      </div>
+
+       <!-- Service 18 -->
+
+       <div class="col-md-4"  >
+        <div class="service-card hidden" class="service-item"  >
+         <a href="sec.html"  style="text-decoration: none;" > <img src="{{url_for('static', filename='img/im4.png)}}" alt="Portfolio Management" class="service-img mb-4">
+          <h4 class="service-title" >Secondary Market Department</h4></a>
+          <!-- <p class="service-text">
+            For high-net-worth individuals, our PMS offers personalized investment strategies
+            aimed at superior performance and long-term wealth creation.
+          </p> -->
+        <!-- <a href="pms.html"  ><span class="material-icons" >arrow_forward</span></a> -->
+
+        </div>
+      </div>
+      
+        <!-- Service 19  -->
+      <div class="col-md-4">
+        <div class="service-card hidden" class="service-item">
+         <a href="forex.html"  style="text-decoration: none;" > <img src="{{url_for('static', filename='img/y9.jpg)}}" alt="Dematerialisation" class="service-img mb-4">
+          <h4 class="service-title" >Forex Advisory & Market Insights</h4></a>
+          <!-- <p class="service-text">
+            Still holding physical share certificates? We help convert them to electronic form quickly
+            and securely — managing everything from verification to depository processing.
+          </p>
+        <a href="equity.html"  ><span class="material-icons" >arrow_forward</span></a> -->
+
+        </div>
+      </div>
+   
+      <!-- Service 20 -->
+      <div class="col-md-4">
+        <div class="service-card hidden" class="service-item">
+         <a href="currency.html"  style="text-decoration: none;" > <img src="{{url_for('static', filename='img/y30.jpg)}}" alt="Portfolio Management" class="service-img mb-4">
+          <h4 class="service-title" >Currency Exchange</h4></a>
+          <!-- <p class="service-text">
+            For high-net-worth individuals, our PMS offers personalized investment strategies
+            aimed at superior performance and long-term wealth creation.
+          </p> -->
+        <!-- <a href="pms.html"  ><span class="material-icons" >arrow_forward</span></a> -->
+
+        </div>
+      </div>
+    
+  </div>
+
+  <button id="seeMoreBtn"  style="padding: 10px;color:white;background-color: #D1AB2C; border-radius:12px;font-size: 18px;">See All Services</button>
+</section>
+<script>
+  const seeMoreBtn = document.getElementById("seeMoreBtn");
+  const hiddenCards = document.querySelectorAll(".service-card.hidden");
+
+  seeMoreBtn.addEventListener("click", () => {
+    hiddenCards.forEach(card => card.classList.toggle("hidden"));
+    seeMoreBtn.textContent =
+      seeMoreBtn.textContent === "See All Services"
+        ? "Show Less"
+        : "See All Services";
+  });
+</script>
+
+       <!-- <div class="text-center mt-3" id="seeMoreBtn">
+        <a href="services.html" class="btn btn-primary" style="padding: 10px; background-color: #D1AB2C; border-radius:12px;font-size: 18px;"> See All Services</a>
+        <br>
+      </div>
+    </div> -->
+
+  </section>
+    
+
+
+<!-- about us -->
+  <!-- <br><section class="about-header text-center text-white py-5">
+    <div class="container">
+      <h1 class="about">About Us </h1>
+      <p class="lead">Welcome to <strong>Peacock Wealth Management</strong> — your trusted partner in financial growth and stability.</p>
+      <p>Peacock Wealth Management is more than a financial advisory firm — we are a team of passionate professionals committed to redefining how individuals and businesses manage their wealth.
+          Based in <strong>Kilpauk, Chennai</strong>, we are a comprehensive wealth management firm offering 
+          <strong>investment advisory, asset management, financial planning,</strong> and 
+          <strong>stock market consulting</strong> services.
+        </p>
+        
+      <div class="text-center mt-3">
+        <a href="about.html" class="btn btn-primary" style="padding: 10px; background-color: #f3c623;">Learn More</a>
+      </div>
+    </div>
+  </section> -->
+  <!-- About Section -->
+<section id="about" class="about-section" >
+  <div class="about-content">
+    <div class="about-text">
+      <h2 style="font-size:40px; color: rgb(60, 59, 59);  font-family:Lexend Peta, sans-serif ;">About Us</h2>
+      <p style="font-size: 20px;">
+       <strong> We</strong> are a specialist wealth advisory firm dedicated to building meaningful financial legacies.
+Based in Chennai and serving clients across India and overseas, we provide discreet, customised wealth strategies grounded in research, discipline, and ethical clarity.
+
+At Peacock Wealth Management, our philosophy is simple —
+wealth is not a race; it is a responsibility.
+
+We guide our clients through every stage of their financial journey —
+from wealth creation to protection, growth, and succession —
+with a focus on long-term consistency over short-term noise.</p><div class="text-center mt-3">
+        <!-- <a href="about.html" class="btn btn-primary" style="padding: 10px; background-color: #D1AB2C; border-radius:12px;font-size: 18px;">Learn More</a> -->
+      </div>
+    </div>
+    <div class="about-image">
+     <img src="{{url_for('static', filename='img/im7.jpg)}}" alt="About Peacock Wealth Management">
+    </div>
+  </div>
+
+  <!--  why choose us box -->
+
+
+
+<!-- Add this link once in your <head> section -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<section class="why-choose-us">
+  <div class="con">
+    <div class="left-image">
+      <img src="{{url_for('static', filename='img/man.png)}}" alt="Why Choose Us">
+    </div>
+    <div class="right-content">
+      <h2 style=" font-family:Lexend Peta, sans-serif ;"><strong>Why Clients Choose Peacock</strong></h2><br>
+      <div class="scroll-box">
+        
+        <div class="point">
+          <h4><i class="fa-solid fa-user-tie"></i> Private-Client Experience</h4>
+          <p>A boutique approach — fewer clients, deeper relationships, discreet advisory.</p>
+        </div>
+
+        <div class="point">
+          <h4><i class="fa-solid fa-chart-line"></i> Research-Driven Strategy</h4>
+          <p>We do not speculate; we guide through data, discipline, and structured risk management.</p>
+        </div>
+
+        <div class="point">
+          <h4><i class="fa-solid fa-layer-group"></i> Personalised Wealth Architecture</h4>
+          <p>Every portfolio is crafted around your life, goals, and risk appetite — not market noise or mass-market products.</p>
+        </div>
+
+        <div class="point">
+          <h4><i class="fa-solid fa-handshake"></i> Ethics & Transparency</h4>
+          <p>Clear communication, no hidden costs, no conflicted advice — your trust is our currency.</p>
+        </div>
+
+        <div class="point">
+          <h4><i class="fa-solid fa-building-columns"></i> Institution-Grade Access</h4>
+          <p>Through our strategic partnerships with leading financial institutions, we deliver premium products, priority support, and curated opportunities.</p>
+        </div>
+
+        <p class="final-line">
+          <i class="fa-solid fa-feather-pointed"></i> With Peacock, you do not simply invest — you evolve financially, with clarity and conviction.
+        </p>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+ <!-- Mission & Vision Section -->
+<section class="mission-vision py-5">
+  <div class="container">
+    
+    <!-- <h2 class="section-title text-center mb-5" style="font-size:60px;">Our Mission & Vision</h2><br> -->
+
+    <div class="mv-row">
+      <!-- Mission Box -->
+      <div class="mv-box">
+        <div class="mv-icon">
+          <i class="bi bi-bullseye"></i>
+        </div>
+        <h3 class="mv-title">Our Mission</h3>
+        <p class="mv-text">
+         At Peacock Wealth Management, our mission is to redefine what wealth truly means — not just numbers on a screen, but a living reflection of purpose, legacy, and peace of mind.
+
+We exist to make finance feel human again.
+To take the complexity of markets and turn it into clarity, to turn hesitation into conviction, and to transform information into insight.
+
+Our commitment goes beyond returns —
+we build financial ecosystems that evolve with you, protect you, and empower you to live life on your terms.
+
+Every portfolio is not just an investment; it’s a mirror of your aspirations, your values, your future.
+
+We serve with integrity, guided by research, discipline, and empathy —
+because real wealth isn’t built overnight; it’s built over generations, quietly, consistently, and consciously.
+
+We don’t just manage capital. We elevate purpose.
+
+        </p>
+      </div>
+
+      <!-- Vision Box -->
+      <div class="mv-box">
+        <div class="mv-icon">
+          <i class="bi bi-eye"></i>
+        </div>
+        <h3 class="mv-title">Our Vision</h3>
+        <p class="mv-text">
+         Our vision is to lead a new era of Indian wealth management —
+one where clarity replaces confusion, education replaces dependency, and trust replaces transaction.
+
+We aspire to make Peacock Wealth Management a symbol of global excellence with Indian integrity —
+a firm that blends technology, transparency, and timeless wisdom into every client relationship.
+
+We see a future where finance is not feared but understood —
+where every investor, whether seasoned or new, experiences the confidence that comes from knowledge, not chance.
+
+We aim to create a movement where success is not defined by size, but by substance, sincerity, and stewardship.
+
+Our vision is simple — to make wealth a source of calm, confidence, and contribution
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+  
+</section>
+
+<!-- Partnership Logos -->
+<section class="about-section py-5" >
+  <div class="container">
+    <h2 class="section-title text-center mb-5" style="font-size:40px;color: rgb(60, 59, 59); font-family:Lexend Peta, sans-serif ;">Corporate Professional</h2>
+    <!-- <p style="text-align: center;margin-top: 0px;">Collaborating with India’s leading financial institutions to deliver seamless, compliant, and intelligent wealth solutions. -->
+<!-- </p> -->
+
+    <!-- Top Row (3 logos) -->
+    <div class="row justify-content-center text-center mb-4">
+      <div class="col-md-3 col-sm-6 mb-4">
+        <div class="partner-card">
+          <img src="{{url_for('static', filename='img/axis.png)}}" alt="Axis Bank">
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 mb-4">
+        <div class="partner-card">
+          <img src="{{url_for('static', filename=img/kot.png)}}" alt="Kotak Mahindra Bank">
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 mb-4">
+        <div class="partner-card">
+          <img src="{{url_for('static', filename=img/Bajaj.jpg)}}" alt="Bajaj Finance">
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom Row (2 logos) -->
+    <div class="row justify-content-center text-center">
+      <div class="col-md-3 col-sm-6 mb-4">
+        <div class="partner-card">
+          <img src="{{url_for('static', filename=img/IIFL.png)}}" alt="IIFL Capital"  style="height: 90px;">
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 mb-4">
+        <div class="partner-card">
+          <img src="{{url_for('static', filename=img/g (1).webp)}}" alt="GTC Group">
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+  <!-- Contact Preview Section -->
+  <!-- <section class="section py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Contact Us</h2>
+      <p class="text-center">Reach out to us for personalized investment solutions.</p>
+      <div class="text-center mt-3">
+        <a href="contact.html" class="btn btn-primary">Contact Now</a>
+      </div>
+    </div>
+  </section> -->
+  <!-- Contact Section -->
+<!-- <section id="contact" class="contact-section py-5">
+  <div class="container">
+    <h2 class="text-center mb-5" style="color:#006E7F; font-size: 50px;">Contact Us</h2>
+    <div class="row text-center"> -->
+      
+      <!-- Office Address -->
+      <!-- <div class="col-md-4 mb-4">
+        <div class="contact-box">
+          <div class="icon-circle">
+            <i class="bi bi-geo-alt-fill"></i>
+          </div>
+          <h5 class="mt-3">Office</h5>
+          <p>
+            c2 (3rd Floor), Pace Royal Court,<br>
+            Sivasankaran street,kilpauk<br>
+            chennai - 600010<br> Tamil Nadu ,India
+          </p>
+        </div>
+      </div> -->
+
+      <!-- Phone -->
+      <!-- <div class="col-md-4 mb-4">
+        <div class="contact-box">
+          <div class="icon-circle">
+            <i class="bi bi-telephone-fill"></i>
+          </div>
+          <h5 class="mt-3">Phone Number</h5>
+          <p>+91 9363963411</p>
+        </div>
+      </div> -->
+
+      <!-- Email -->
+      <!-- <div class="col-md-4 mb-4">
+        <div class="contact-box">
+          <div class="icon-circle">
+            <i class="bi bi-envelope-fill"></i>
+          </div>
+          <h5 class="mt-3">E-mail Address</h5>
+         
+          <p><a href="mailto:info@peacock.org.in">info@peacock.org.in</a></p>
+
+        </div>
+      </div>
+    </div>
+     <div class="text-center mt-3">
+        <a href="contact.html" class="btn btn-primary" style="padding: 10px; background-color: #D1AB2C; border-radius:12px;font-size: 18px;">Contact Now</a>
+      </div>
+  </div>
+   -->
+</section>
+<!-- Privacy Policy Popup -->
+<div id="privacyPopup" class="privacy-popup">
+  <div class="popup-content">
+    <p>
+      We use cookies and collect data to improve your experience.  
+      By continuing, you agree to our 
+      <a href="privacy.html" target="_blank">Privacy Policy</a> and 
+      <a href="terms.html" target="_blank">Terms & Conditions</a>.
+    </p>
+    <button id="acceptBtn">Accept</button>
+  </div>
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const popup = document.getElementById("privacyPopup");
+    const acceptBtn = document.getElementById("acceptBtn");
+
+    // Check if user already accepted
+    if (!localStorage.getItem("privacyAccepted")) {
+      popup.style.display = "block";
+    }
+
+    acceptBtn.addEventListener("click", function () {
+      localStorage.setItem("privacyAccepted", "true");
+      popup.style.display = "none";
+    });
+  });
+</script>
+
+
+  <!-- Footer -->
+  <!-- <footer class="text-center p-4 bg-dark text-white">
+    &copy; 2025 Peacock Wealth & Asset Management. All rights reserved. -->
+    <!-- <footer class="text-center p-4 bg-dark text-white mt-5" >
+  &copy; 2025 Peacock Wealth & Asset Management. All rights reserved.<br>
+  Illustrations by <a href="https://storyset.com/" target="_blank" class="text-warning text-decoration-none">Storyset</a>
+</footer><br> -->
+<!-- <footer class="text-center p-4 bg-dark text-white mt-5">
+    &copy; 2025 Peacock Wealth & Asset Management. All rights reserved.
+  </footer> -->
+  <footer class="footer text-white pt-5 pb-3" >
+  <div class="container">
+    <div class="row text-center text-md-start">
+      
+      <!-- Company Info -->
+      <div class="col-md-4 mb-4">
+        <h5 class="text-warning mb-3">Peacock Wealth Management</h5>
+        <p>
+          Your trusted partner in financial growth, investment planning, and wealth management.  
+          We help you build a secure and prosperous future.
+        </p>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="col-md-4 mb-4">
+        <h5 class="text-warning mb-3">Quick Links</h5>
+        <ul class="list-unstyled">
+          <li><a href="home.html" class="text-white text-decoration-none">Home</a></li>
+          <!-- <li><a href="about.html" class="text-white text-decoration-none">About Us</a></li> -->
+          <!-- <li><a href="services.html" class="text-white text-decoration-none">Services</a></li> -->
+          <li><a href="contact.html" class="text-white text-decoration-none">Contact</a></li>
+          <li><a href="privacy.html" class="text-white text-decoration-none">Privacy Policy</a></li>
+          <li><a href="terms.html" class="text-white text-decoration-none">Terms & Conditions</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact Details -->
+      <div class="col-md-4 mb-4">
+        <h5 class="text-warning mb-3">Contact Us</h5>
+        <p><i class="bi bi-geo-alt-fill text-warning"></i> Chennai, India</p>
+        <p><i class="bi bi-envelope-fill text-warning"></i> info@peacock.org.in</p>
+        <p><i class="bi bi-telephone-fill text-warning"></i> +91 9363963411</p>
+        <p><i class="bi bi-telephone-fill text-warning"></i> +91 4431520110</p>
+
+          
+
+        <div class="mt-3">
+          <a href="#" class="text-white me-3"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="text-white me-3"><i class="bi bi-linkedin"></i></a>
+          <a href="#" class="text-white me-3"><i class="bi bi-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <hr class="border-light">
+
+    <div class="text-center">
+      <p class="mb-0">
+        &copy; 2025 Peacock Wealth Management. All rights reserved.<br>
+      </p>
+    </div>
+  </div>
+</footer>
+
+
+
+
+  <!-- </footer> -->
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- <script>
+const hero = document.querySelector(".hero");
+const images = ["image1.jpg", "image2.jpg", "image3.jpg"]; // your images
+let index = 0;
+
+setInterval(() => {
+  index = (index + 1) % images.length;
+  hero.style.backgroundImage = `url(${images[index]})`;
+}, 5000);
+</script> -->
+
+<!-- <div class="alert-overlay" id="fraudAlert">
+  <div class="alert-box">
+    <div class="alert-header">
+      <span class="alert-icon">⚠</span>
+      <h2>Fraud & Scam Alert</h2>
+    </div>
+
+    <div class="alert-body">
+      <p class="intro">
+        Please read carefully before proceeding — your safety is our priority.
+      </p>
+
+      <ul class="alert-points">
+        <li>We never guarantee profits or fixed returns on investments.</li>
+        <li>We never ask for payments or personal details over chat or DM.</li>
+        <li>Do not share your OTPs, passwords, or banking credentials.</li>
+        <li>Always verify official communication before sending funds.</li>
+        <li>Report suspicious messages or profiles immediately.</li>
+      </ul>
+
+      <div class="alert-note">
+        <strong>Note:</strong> Financial markets involve risks. Please invest wisely and trade responsibly.
+      </div>
+    </div>
+
+    <button id="closeAlert">I Understand</button>
+  </div>
+</div>
+<script> -->
+ 
+  <!-- window.onload = function() {
+    document.getElementById("fraudAlert").style.display = "flex"; -->
+  <!-- }; -->
+
+  <!-- document.getElementById("closeAlert").addEventListener("click", function() {
+    document.getElementById("fraudAlert").style.display = "none";
+  });
+</script> -->
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const sections = document.querySelectorAll(".section");
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("active");
+        } else {
+          entry.target.classList.remove("active");
+        }
+      });
+    },
+    { threshold: 0.3 } // 30% visibility triggers fade
+  );
+
+  sections.forEach((section) => observer.observe(section));
+});
+
+</script>
+<script>
+// Wait until page fully loaded
+document.addEventListener("DOMContentLoaded", function () {
+  // --------------------------
+  // 🔹 HERO SLIDER CODE
+  // --------------------------
+  const slides = document.querySelectorAll(".hero img");
+  let current = 0;
+
+  if (slides.length > 0) {
+    // First image active
+    slides[0].classList.add("active");
+
+    // Change image every 5 seconds
+    setInterval(() => {
+      slides[current].classList.remove("active");
+      current = (current + 1) % slides.length;
+      slides[current].classList.add("active");
+    }, 5000);
+  } else {
+    console.warn("No slides found in .hero section");
+  }
+
+  
+});
+</script>
+
+
+</body>
+</html>

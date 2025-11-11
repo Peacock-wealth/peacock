@@ -1,0 +1,361 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background-color: #ffffff;
+  color: #222;
+}
+
+/* Navbar */
+
+
+/* Nav links */
+/* ===== NAVBAR SECTION ===== */
+.navbar {
+  background-color: #000000;
+  height: 90px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+  opacity: 0.98;
+  padding: 0 40px;
+}
+
+/* Container keeps logo left and links right */
+.navbar .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Logo */
+.logo {
+  height: 200px;           /* fits well inside 90px bar */
+  width: auto;
+  margin-top: 10px;
+  transition: transform 0.3s ease;
+}
+.logo:hover {
+  transform: scale(1.1);
+}
+
+/* Brand text (optional) */
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  color: rgba(229, 233, 16, 0.9);
+  font-weight: 600;
+  font-size: 1.4rem;
+  text-decoration: none;
+}
+
+/* Menu Links */
+.navbar-nav {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.navbar-nav .nav-link {
+  color: #f1f1f1 !important;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+  color: #f3c623 !important; /* gold */
+  transform: scale(1.05);
+}
+
+/* Hover underline animation */
+.navbar-nav .nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #f3c623;
+  transition: width 0.3s ease;
+}
+.navbar-nav .nav-link:hover::after,
+.navbar-nav .nav-link.active::after {
+  width: 100%;
+}
+
+/* Mobile responsive */
+@media (max-width: 992px) {
+  .navbar {
+    height: auto;
+    padding: 10px 20px;
+  }
+
+  .navbar-nav {
+    flex-direction: column;
+    gap: 10px;
+    background-color: rgba(0, 0, 0, 0.98);
+    padding: 15px 0;
+  }
+
+  .navbar-toggler {
+    border: none;
+    filter: invert(1);
+  }
+}
+/* ---------- Dropdown (GoldenBulls Style - 4 Columns) ---------- */
+.dropdown {
+  position: relative;
+}
+.dropdown-content {
+  left: 50%;
+  transform: translateX(-60%);
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #000000; /* Dark blue tone like sample */
+  padding: 25px 30px;
+  border-top: 4px solid var(--gold); /* your theme color */
+  border-radius: 0 0 8px 8px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+  width: 950px; /* fits 4 columns comfortably */
+  z-index: 999;
+  animation: fadeIn 0.3s ease;
+}
+
+
+
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* 4-column grid */
+.dropdown-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px 40px;
+}
+
+/* Link styling */
+.dropdown-grid a {
+  color: #f5f5f5;
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 400;
+  line-height: 1.6;
+  padding: 4px 6px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  display: block;
+}
+
+/* Hover style */
+.dropdown-grid a:hover {
+  color: #ffcc33; /* golden tone */
+  background: rgba(255, 255, 255, 0.08);
+  transform: translateX(5px);
+}
+
+/* Fade animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* Hero */
+
+.hero {
+  /* background: linear-gradient(135deg, #EAFDFC, #F9FAFB); */
+  padding: 170px 40px;
+  display: flex;
+  justify-content: center;
+}
+.hero-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1100px;
+  width: 100%;
+}
+.hero-text {
+  flex: 1;
+  min-width: 300px;
+  padding-right: 30px;
+}
+.hero-text h2 {
+  color: #000000;
+  font-size: 2.3rem;
+  margin-bottom: 10px;
+}
+.hero-text p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+.hero-image img {
+  width: 400px;
+  max-width: 100%;
+}
+.btn-primary {
+  background-color: #D1AB2C;
+  color: white;
+  padding: 12px 28px;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: 0.3s;
+  font-weight: 500;
+}
+.btn-primary:hover {
+  background-color: #000000;
+}
+/* Sections */
+/* --- Info Section (2-column layout) --- */
+.info-section {
+  background: white;
+  padding: 80px 40px;
+}
+.info-section:nth-child(even) {
+  background: #fefefe;
+}
+.info-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1100px;
+  margin: auto;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+.info-text {
+  flex: 1;
+  min-width: 280px;
+}
+.info-text h3 {
+  color: #000000;
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+.info-text p {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #444;
+}
+.info-image img {
+  height: 250px;
+  width: 250px;
+  max-width: 100%;
+  border-radius: 12px;
+  /* box-shadow: 0 4px 12px rgba(0,0,0,0.08); */
+}
+.reverse .info-container {
+  flex-direction: row-reverse;
+}
+
+/* --- Feature Cards --- */
+.feature-section {
+  text-align: center;
+  padding: 80px 30px;
+  /* background: #EAFDFC; */
+}
+.feature-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 30px;
+}
+.feature-card {
+  /* background: white; */
+  width: 300px;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  transition: 0.3s;
+}
+.feature-card:hover {
+  transform: translateY(-5px);
+}
+.feature-card img {
+  height: 100px;
+  margin-bottom: 15px;
+}
+.feature-card h4 {
+  color: #000000;
+}
+
+/* --- Why Choose Us --- */
+.choose-section {
+  background: url('image/blue-bg.jpg') center/cover no-repeat;
+  color: rgb(14, 6, 6);
+  text-align: center;
+  padding: 90px 30px;
+  position: relative;
+}
+.choose-overlay {
+  /* background: rgba(255, 255, 255, 0.981); */
+  padding: 60px 30px;
+  border-radius: 16px;
+  max-width: 900px;
+  margin: auto;
+}
+.choose-overlay ul {
+  list-style: none;
+  padding: 0;
+}
+.choose-overlay li {
+  margin: 10px 0;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+/* --- CTA --- */
+.cta-section {
+  background:#000000;
+  color: white;
+  text-align: center;
+  padding: 80px 30px;
+}
+.cta-section h3 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+.btn-secondary {
+  background-color: #D4AF37;
+  color: white;
+  padding: 12px 30px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 500;
+  margin-top: 10px;
+  display: inline-block;
+  transition: 0.3s;
+}
+.btn-secondary:hover {
+  background-color: #c7ac00;
+}
+
+/* Footer */
+.footer a:hover {
+  color: #000000;
+  text-decoration: underline;
+}
+
+.footer p, .footer li {
+  font-size: 14px;
+  line-height: 1.6;
+}
+

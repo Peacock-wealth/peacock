@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Peacock Wealth Management | Sovereign Gold Bonds</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="{{ url_for('static', filename='css/so.css') }}">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Bootstrap JS (for mobile menu toggle) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+</head>
+<body>
+
+ 
+      <!-- Navbar -->
+<nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container">
+    <!-- Logo -->
+    <a class="navbar-brand d-flex align-items-center" href="home.html">
+      <img src="{{url_for('static', filename=img/peacock.png)}}" alt="Peacock Wealth Management Logo" class="logo me-2">
+    </a>
+
+    <!-- Mobile Toggle -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Menu Items -->
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+        <!-- <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li> -->
+          <!-- Services Dropdown -->
+        <li class="dropdown" class="nav-item">
+          <a href="#" class="nav-link">Services ▾</a>
+          <div class="dropdown-content">
+            <div class="dropdown-grid">
+               <a href="">Investment & Advisory</a>
+              <a href="demat.html">Demat</a>
+               <a href="equity.html">Equity Advisory</a>
+              <a href="pms.html">Portfolio Management</a>
+              <a href="mut.html">Mutual Fund Advisory</a>
+               <a href="aif.html">Alternative Investment Fund</a>
+               <a href="com.html ">Commodities & Precious Metals Advisory</a>
+              <a href="un.html">Unlisted Shares & Pre-IPO Intelligence</a>
+              <a href="so.html">Sovereign Gold Bonds (SGB)</a>
+              <a href="ipo.html">Initial Public Offering (IPO)</a>
+              <a href="ncd.html">Non Convertible Debentures (NCD)</a>
+              <a href="fd.html">Fixed Deposit</a>
+               <a href=" ">Debt & Income Instruments</a>
+               <a href=" ">Wealth Strategy & Planning</a>
+               <a href=" ">Designing disciplined growth with purpose.</a>
+              <a href="financial.html">Financial & Goal Planning</a>
+               <a href="wea.html">Wealth Desk / Portfolio Review</a>
+              <a href="np.html">National Pension System</a>
+              <a href="las.html">Loan Against Shares</a>
+              <a href="loans.html">Loan Products & Structured Financing</a>
+              <a href="in.html">Insurance & Risk Protection</a>
+              <a href="sec.html">Secondary Market Department</a>
+              <a href="  ">Market Research & Sectoral Insights</a>
+              <a href="  ">Macro Economic Reports</a>
+              <a href="  ">Markets & Instruments</a>
+              <a href="forex.html">Forex Advisory & Market Insights</a>
+              <a href="  ">Global access. Local compliance. </a>
+              <a href="  ">Macro analysis, INR-linked pair trends, and currency risk strategies.</a>
+              <a href="  ">Intelligent execution.</a>
+              <a href="currency.html">Currency Exchange</a>
+              <a href="  ">Authorised currency conversion and remittance guidance.</a>
+            </div>
+          </div>
+        </li>
+          <li class="nav-item"><a class="nav-link" href="pricing.html">Fee Structure</a></li>
+        <li class="nav-item"><a class="nav-link" href="co.html">Course</a></li>
+
+        <!-- <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li> -->
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+        <li class="nav-item"><a class="nav-link active" href="so.html">sovereign gold bonds</a></li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <div class="hero-text">
+        <h2>Sovereign Gold Bonds</h2>
+        <p>Gold That Earns, Not Just Shines.</p>
+        <a href="contact.html" class="btn-primary">Contact Us for More Details</a>
+      </div>
+      <div class="hero-image">
+        <img src="{{url_for('static', filename=img/im9.png)}}" alt="Equity Advisory Illustration" />
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Philosophy Section -->
+  <section class="about alt" id="philosophy">
+    <h3>Our Philosophy</h3>
+    <p>Gold is more than an asset — it’s an emotion that carries trust across generations. But emotions deserve structure.</p>
+    <p>Our SGB advisory is designed for investors who wish to preserve legacy while embracing liquidity, tax efficiency, and sovereign security. It’s how we turn a traditional comfort into a modern advantage — a symbol of stability with sophistication.</p>
+    <p>We don’t just buy gold. We make it earn gracefully.</p>
+  </section>
+
+  <div class="offer-cards">
+  <div class="card reveal">
+    <div class="card-icon"><i class="fa-solid fa-shield-halved"></i></div>
+    <h4>Government-Backed Security</h4>
+    <p><strong>100% guaranteed by the RBI</strong> — pure 24K value, zero storage risk, complete peace of mind.</p>
+  </div>
+
+  <div class="card reveal">
+    <div class="card-icon"><i class="fa-solid fa-coins"></i></div>
+    <h4>Assured Annual Interest</h4>
+    <p><strong>2.5% interest per annum</strong> on your gold’s value — something physical gold can never offer.</p>
+  </div>
+
+  <div class="card reveal">
+    <div class="card-icon"><i class="fa-solid fa-percent"></i></div>
+    <h4>Tax Efficiency</h4>
+    <p>No capital gains tax on redemption — one of India’s most efficient wealth preservation tools.</p>
+  </div>
+
+  <div class="card reveal">
+    <div class="card-icon"><i class="fa-solid fa-arrows-spin"></i></div>
+    <h4>Liquidity & Flexibility</h4>
+    <p>Tradable on recognized exchanges and redeemable after five years — your wealth stays dynamic.</p>
+  </div>
+
+  <div class="card reveal">
+    <div class="card-icon"><i class="fa-solid fa-gem"></i></div>
+    <h4>Legacy Planning</h4>
+    <p>Ideal for inheritance portfolios — blending emotional continuity with financial growth.</p>
+  </div>
+</div>
+
+ <!-- Contact CTA -->
+ <section class="contact-ct reveal">  <section class="contact-ct">
+    <h3>Ready to start your journey?</h3>
+    <p style="color: white;">Let our experts help you set up your account and craft a winning strategy.</p>
+    <a href="contact.html" class="btn-secondary">Contact Us for More Details →</a>
+  </section>
+  <hr class="border-light">
+  </section>
+
+ <!-- Footer -->
+  <footer class="footer text-white pt-5 pb-3" style="background-color:#000000;">
+  <div class="container">
+    <div class="row text-center text-md-start">
+      
+      <!-- Company Info -->
+      <div class="col-md-4 mb-4">
+        <h5 class="text-warning mb-3">Peacock Wealth Management</h5>
+        <p>
+          Your trusted partner in financial growth, investment planning, and wealth management.  
+          We help you build a secure and prosperous future.
+        </p>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="col-md-4 mb-4">
+        <h5 class="text-warning mb-3">Quick Links</h5>
+        <ul class="list-unstyled">
+          <li><a href="home.html" class="text-white text-decoration-none">Home</a></li>
+          <!-- <li><a href="about.html" class="text-white text-decoration-none">About Us</a></li> -->
+          <!-- <li><a href="services.html" class="text-white text-decoration-none">Services</a></li> -->
+          <li><a href="contact.html" class="text-white text-decoration-none">Contact</a></li>
+          <li><a href="privacy.html" class="text-white text-decoration-none">Privacy Policy</a></li>
+          <li><a href="terms.html" class="text-white text-decoration-none">Terms & Conditions</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact Details -->
+      <div class="col-md-4 mb-4">
+        <h5 class="text-warning mb-3">Contact Us</h5>
+        <p><i class="bi bi-geo-alt-fill text-warning"></i> Chennai, India</p>
+        <p><i class="bi bi-envelope-fill text-warning"></i> info@peacock.org.in</p>
+        <p><i class="bi bi-telephone-fill text-warning"></i> +91 9363963411</p>
+        <p><i class="bi bi-telephone-fill text-warning"></i> +91 4431520110</p>
+
+        <div class="mt-3">
+          <a href="#" class="text-white me-3"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="text-white me-3"><i class="bi bi-linkedin"></i></a>
+          <a href="#" class="text-white me-3"><i class="bi bi-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <hr class="border-light">
+
+    <div class="text-center">
+      <p class="mb-0">
+        &copy; 2025 Peacock Wealth Management. All rights reserved.<br>
+      
+      </p>
+    </div>
+  </div>
+</footer>
+
+
+  <!-- Scroll Animation Script -->
+  <script>
+    const reveals = document.querySelectorAll('.reveal');
+    window.addEventListener('scroll', () => {
+      for (let i = 0; i < reveals.length; i++) {
+        const windowHeight = window.innerHeight;
+        const revealTop = reveals[i].getBoundingClientRect().top;
+        const revealPoint = 150;
+        if(revealTop < windowHeight - revealPoint){
+          reveals[i].classList.add('active');
+        } else {
+          reveals[i].classList.remove('active');
+        }
+      }
+    });
+  </script>
+
+</body>
+</html>
