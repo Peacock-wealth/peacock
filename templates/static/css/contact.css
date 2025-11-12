@@ -16,7 +16,7 @@
     } */
      .about-header {
   background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
-              "{{ url_for('static', filename='img/r1.png') }}" center/cover no-repeat;
+              "static/img/r1.png" center/cover no-repeat;
   color: #ffd7d7;
   padding: 100px 20px;
   height: 400px;
