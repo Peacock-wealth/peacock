@@ -36,7 +36,7 @@ mail = Mail(app)
 def home():
     return "Flask backend running successfully!"
 
-@app.route('demo/contact', methods=['POST'])
+@app.route('/demo/contact', methods=['POST'])
 def contact():
     data = request.json
     
