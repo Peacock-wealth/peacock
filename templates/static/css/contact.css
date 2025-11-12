@@ -266,11 +266,11 @@ select.form-control:focus {
   position: absolute;
   top: 100%;
   left: 0;
-  background: #000000; /* Dark blue tone like sample */
+  background: #ffffff; /* Dark blue tone like sample */
   padding: 25px 30px;
   border-top: 4px solid var(--gold); /* your theme color */
   border-radius: 0 0 8px 8px;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+  box-shadow: 0 6px 20px rgba(16, 16, 16, 0.2);
   width: 950px; /* fits 4 columns comfortably */
   z-index: 999;
   animation: fadeIn 0.3s ease;
