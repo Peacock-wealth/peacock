@@ -72,16 +72,19 @@ def contact():
         "message": message
     })
 
-    # Send email
-    msg = Message(
-        subject=f"New Contact Message from {name}",
-        sender=app.config['MAIL_USERNAME'],
-        recipients=[app.config['MAIL_USERNAME']]
-    )
-    msg.body = f"Name: {name}\nEmail:fRequirements: {requirements}\n {email}\nMessage: {message}"
-    mail.send(msg)
+    # Send email safely
+    try:
+        msg = Message(
+            subject=f"New Contact Message from {name}",
+            sender=app.config['MAIL_USERNAME'],
+            recipients=[app.config['MAIL_USERNAME']]
+        )
+        msg.body = f"Name: {name}\nEmail: {email}\nRequirements: {requirements}\nMessage: {message}"
+        mail.send(msg)
+    except Exception as e:
+        print("Email send failed:", e)  # Render logs-la idhu print aagum
 
-    return jsonify({"status": "success", "message": "Message sent successfully!"}),200
+    return jsonify({"status": "success", "message": "Message sent successfully!"}), 200
 
 # ------------------- Run Flask -------------------
 if __name__ == '__main__':
