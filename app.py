@@ -6,7 +6,10 @@ from flask_cors import CORS
 from urllib.parse import quote_plus
 
 app = Flask(__name__)
-CORS(app, origins=["https://peacockfrontends.onrender.com"])  # Frontend (Live Server) can talk to backend
+CORS(app, resources={r"/*": {"origins": [
+    "https://peacockfrontends.onrender.com",
+    "http://localhost:5500"
+]}}) # Frontend (Live Server) can talk to backend
 
 # ------------------- MongoDB setup -------------------
 # Replace with your MongoDB user credentials
