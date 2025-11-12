@@ -7,9 +7,10 @@ from urllib.parse import quote_plus
 
 app = Flask(__name__)
 CORS(app, resources={r"/*": {"origins": [
-    "https://peacockfrontend.onrender.com"
-    
-]}}) # Frontend (Live Server) can talk to backend
+    "https://peacock-frontend.onrender.com",
+    "http://localhost:5500"
+]}}, supports_credentials=True)
+ # Frontend (Live Server) can talk to backend
 
 # ------------------- MongoDB setup -------------------
 # Replace with your MongoDB user credentials
