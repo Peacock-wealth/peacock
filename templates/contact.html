@@ -174,8 +174,8 @@
             <input type="text" class="form-control" id="subject" placeholder="Subject of your message" required>
           </div> -->
           <div class="mb-3" >
-  <label for="subject" class="form-label" style="background-color: white;"></label>Requirements</label>
-  <select class="form-control" id="subject" required>
+  <label for="subject" class="form-label"></label>Requirements</label>
+  <select class="form-control" id="subject" required  style="background-color: white; color: #000000;">
     <option value="" selected disabled>Select your requirement</option>
     <option value="Equity">Equity Advisory Services</option>
     <option value="Demat Account">Demat Account Services</option>
@@ -278,7 +278,7 @@ document.getElementById("contactForm").addEventListener("submit", async function
   let message = document.getElementById("message").value;
 
   try {
-    const res = await fetch("https://peacock-alw3.onrender.com/demo/contact", {
+    const res = await fetch("https://peacockbackend.onrender.com/demo/contact", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ name, email, requirements, message })
