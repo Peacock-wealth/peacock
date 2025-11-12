@@ -6,11 +6,20 @@ from flask_cors import CORS
 from urllib.parse import quote_plus
 
 app = Flask(__name__)
+
 CORS(app, resources={r"/*": {"origins": [
     "https://peacockfrontends.onrender.com",
     "http://localhost:5500"
 ]}}, supports_credentials=True)
- # Frontend (Live Server) can talk to backend
+
+# ✅ Paste this exactly below that, at the same level (no extra indent)
+@app.after_request
+def after_request(response):
+    response.headers.add('Access-Control-Allow-Headers', 'Content-Type,Authorization')
+    response.headers.add('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE,OPTIONS')
+    return response
+
+
 
 # ------------------- MongoDB setup -------------------
 # Replace with your MongoDB user credentials

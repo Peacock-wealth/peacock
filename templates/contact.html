@@ -267,7 +267,7 @@
   
 </section>
 
-<!-- ✅ Corrected JavaScript -->
+
 <script>
 document.getElementById("contactForm").addEventListener("submit", async function(e) {
   e.preventDefault();
@@ -278,7 +278,7 @@ document.getElementById("contactForm").addEventListener("submit", async function
   let message = document.getElementById("message").value;
 
   try {
-    const res = await fetch("https://peacockbackend.onrender.com/demo/templates/contact", {
+    const res = await fetch("https://peacockbackend.onrender.com/demo/contact", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ name, email, requirements, message })
@@ -286,16 +286,20 @@ document.getElementById("contactForm").addEventListener("submit", async function
 
     const data = await res.json();
     console.log("Response:", data);
-    alert("✅ Message sent successfully!");
 
-    // optional: clear form after submission
-    document.getElementById("contactForm").reset();
+    if (res.ok && data.status === "success") {
+      alert("✅ Message sent successfully!");
+      document.getElementById("contactForm").reset();
+    } else {
+      alert("❌ Failed to send: " + data.message);
+    }
   } catch (err) {
-    console.log("❌ Error:", err);
+    console.error("Error:", err);
     alert("Error sending message — check backend or CORS settings!");
   }
 });
 </script>
+
 
 
   <!-- Footer -->
