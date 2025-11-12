@@ -41,6 +41,7 @@ def contact():
     data = request.json
     
     print("Form data received →", data) 
+    
     name = data.get('name')
     email = data.get('email')
     requirements = data.get('requirements') 
@@ -66,7 +67,7 @@ def contact():
     msg.body = f"Name: {name}\nEmail:fRequirements: {requirements}\n {email}\nMessage: {message}"
     mail.send(msg)
 
-    return jsonify({"status": "success", "message": "Message sent successfully!"})
+    return jsonify({"status": "success", "message": "Message sent successfully!"}),200
 
 # ------------------- Run Flask -------------------
 if __name__ == '__main__':
