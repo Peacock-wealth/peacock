@@ -1,4 +1,4 @@
- body {
+body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       background-color: #f8f9fa;
     }
@@ -16,7 +16,7 @@
     } */
      .about-header {
   background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
-              "static/img/r1.png" center/cover no-repeat;
+              "static/img/r1.jpg" center/cover no-repeat;
   color: #ffd7d7;
   padding: 100px 20px;
   height: 400px;
@@ -44,7 +44,7 @@
 
     select.form-control {
   appearance: none;
-  background-image: url('data:image/svg+xml;utf8,<svg fill="gray" height="20" width="20" xmlns="http://www.w3.org/2000/svg"><polygon points="0,0 20,0 10,10"/></svg>');
+  /* background-image: url('data:image/svg+xml;utf8,<svg fill="gray" height="20" width="20" xmlns="http://www.w3.org/2000/svg"><polygon points="0,0 20,0 10,10"/></svg>'); */
   background-repeat: no-repeat;
   background-position: right 10px center;
   background-size: 12px;
