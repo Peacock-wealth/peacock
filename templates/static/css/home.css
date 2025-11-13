@@ -11,7 +11,6 @@ font-family: 'Poppins', sans-serif;
   /* font-family: "REM", sans-serif; */
   line-height: 1.6;
   background-color: rgb(255, 255, 255);
-  overflow-x: hidden;
 }
 /* soft golden flowing light */
 .mission-vision::before,
@@ -162,7 +161,6 @@ font-family: 'Poppins', sans-serif;
   align-items: center;
   text-align: center;
   color: white;
-  padding: 40px 20px;
 }
 
 .hero img {
@@ -193,11 +191,11 @@ font-family: 'Poppins', sans-serif;
   z-index: 3;
 }
 .hero h1 {
-  font-size: clamp(1.8rem,5vw,3rem);
+  font-size: 3rem;
   animation: fadeInDown 1.5s ease;
 }
 .hero p {
-  font-size:clamp(1rem,2.5vw,1.2rem);
+  font-size: 1.2rem;
   animation: fadeInUp 2s ease;
 }
 .hero .btn {
@@ -216,12 +214,7 @@ font-family: 'Poppins', sans-serif;
   border-color: #ffffff;
 }
 
-@media (max-width:768px){
-  .hero{
-    height: 90vh;
-    padding: 20px;
-  }
-}
+
 
  /* 🌍 Full-Width About Section */
 .about-section {
@@ -281,10 +274,7 @@ font-family: 'Poppins', sans-serif;
   }
 }
 
-img{
-  max-width: 100%;
-  height: auto;
-}
+
 .section-title {
   /* color: #42a2fc; */
   font-weight: 700;
@@ -336,14 +326,7 @@ img{
   margin: 0 auto;
 }
 
-@media (max-width:768px){
-  .section-title{
-    font-size:1.5rem;
-  }
-  .service-text{
-    font-size: 0.9re;
-  }
-}
+
 .btn-primary {
   background-color: #000000;
   border: none;
