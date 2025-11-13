@@ -11,18 +11,7 @@ font-family: 'Poppins', sans-serif;
   line-height: 1.6;
   background-color: rgb(255, 255, 255);
 }
-/* soft golden flowing light */
-.mission-vision::before,
-.mission-vision::after {
-  content: "";
-  position: absolute;
-  width: 180%;
-  height: 15px;
-  right: -40%;
-  background: radial-gradient(circle at 30% 80%, #f8be00,rgba(0, 0, 0, 0.926) );
-  z-index: 0;
-  transform: rotate(4deg);
-}
+
 .material-icons {
   font-size: 36px;     /* icon size */
   color: #D1AB2C;      /* icon color */
