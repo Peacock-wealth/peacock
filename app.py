@@ -7,9 +7,10 @@ import os
 
 app = Flask(__name__)
 
-# ------------------- CORS -------------------
+# ------------------- CORS FIX -------------------
 CORS(app, resources={r"/*": {"origins": [
     "https://peacockfrontends.onrender.com",
+    "https://peacockwealthmanagement.com",
     "https://www.peacockwealthmanagement.com"
 ]}}, supports_credentials=True)
 
@@ -17,8 +18,9 @@ CORS(app, resources={r"/*": {"origins": [
 def after_request(response):
     response.headers.add('Access-Control-Allow-Headers', 'Content-Type,Authorization')
     response.headers.add('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE,OPTIONS')
-    response.headers.add('Access-Control-Allow-Origin', 'https://peacockfrontends.onrender.com')
+    response.headers.add('Access-Control-Allow-Origin', 'https://peacockwealthmanagement.com')
     return response
+
 
 # ------------------- MongoDB Setup ✔ CHANGE ADDED -------------------
 mongo_uri = os.getenv("mongodb+srv://peacockwealthmanagement_db_user:peacockcompanys@cluster0.63qkmrg.mongodb.net/?appName=Cluster0 ")  # <-- YOU MUST ADD THIS
