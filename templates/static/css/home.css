@@ -298,48 +298,6 @@ font-family: 'Poppins', sans-serif;
 }
 
 
-/* ---------------------------------------- */
-/* 📱 MOBILE RESPONSIVE MEDIA QUERY START   */
-/* ---------------------------------------- */
-@media (max-width: 768px) {
-
-  .hero {
-    height: 85vh;
-    padding: 0 20px;
-  }
-
-  .hero h1 {
-    font-size: 40px;
-    line-height: 1.3;
-  }
-
-  .hero p {
-    font-size: 1rem;
-    margin-top: 10px;
-  }
-
-  .hero .btn {
-    padding: 8px 25px;
-    font-size: 0.9rem;
-    margin-top: 15px;
-  }
-}
-
-@media (max-width: 480px) {
-
-  .hero {
-    height: 500px;
-    padding: 0 15px;
-  }
-
-  .hero h1 {
-    font-size:20px;
-  }
-
-  
-
-  
-}
 
 
 
