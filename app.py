@@ -1,18 +1,18 @@
-# app.py
 from flask import Flask, request, jsonify
 from flask_mail import Mail, Message
 from pymongo import MongoClient
 from flask_cors import CORS
 from urllib.parse import quote_plus
+import os
 
 app = Flask(__name__)
 
+# ------------------- CORS -------------------
 CORS(app, resources={r"/*": {"origins": [
     "https://peacockfrontends.onrender.com",
-    "http://localhost:5500"
+    "https://www.peacockwealthmanagement.com"
 ]}}, supports_credentials=True)
 
-# ✅ Paste this exactly below that, at the same level (no extra indent)
 @app.after_request
 def after_request(response):
     response.headers.add('Access-Control-Allow-Headers', 'Content-Type,Authorization')
@@ -20,26 +20,18 @@ def after_request(response):
     response.headers.add('Access-Control-Allow-Origin', 'https://peacockfrontends.onrender.com')
     return response
 
-
-
-# ------------------- MongoDB setup -------------------
-# Replace with your MongoDB user credentials
-# ------------------- MongoDB setup -------------------
-username = quote_plus("peacockwealthmanagement_db_user")  
-password = quote_plus("peacockcompanys")                  
-database_name = "demo_db"
-
-mongo_uri = f"mongodb+srv://peacockwealthmanagement_db_user:peacockcompanys@cluster0.63qkmrg.mongodb.net/demo_db?retryWrites=true&w=majority"
+# ------------------- MongoDB Setup ✔ CHANGE ADDED -------------------
+mongo_uri = os.getenv("mongodb+srv://peacockwealthmanagement_db_user:peacockcompanys@cluster0.63qkmrg.mongodb.net/?appName=Cluster0 ")  # <-- YOU MUST ADD THIS
 
 client = MongoClient(mongo_uri)
-db = client['demo_db']
+db = client["demo_db"]
 contacts_collection = db["contacts"]
 
-# ------------------- Email setup -------------------
+# ------------------- Email Setup ✔ CHANGE ADDED -------------------
 app.config['MAIL_SERVER'] = 'smtp.gmail.com'
 app.config['MAIL_PORT'] = 587
-app.config['MAIL_USERNAME'] = 'contact@peacock.org.in'
-app.config['MAIL_PASSWORD'] = 'tcna uwdb jxzh ygsb'  # Gmail app password recommended
+app.config['MAIL_USERNAME'] = os.getenv("contact@pacock.org.in")  # <-- YOU MUST ADD THIS
+app.config['MAIL_PASSWORD'] = os.getenv("tcna uwdb jxzh ygsb")  # <-- YOU MUST ADD THIS
 app.config['MAIL_USE_TLS'] = True
 app.config['MAIL_USE_SSL'] = False
 
@@ -48,17 +40,15 @@ mail = Mail(app)
 # ------------------- Routes -------------------
 @app.route('/')
 def home():
-    return "Flask backend running successfully!"
+    return "Backend Running Successfully 🚀"
 
 @app.route('/demo/contact', methods=['POST'])
 def contact():
     data = request.json
-    
-    print("Form data received →", data) 
-    
+
     name = data.get('name')
     email = data.get('email')
-    requirements = data.get('requirements') 
+    requirements = data.get('requirements')
     message = data.get('message')
 
     if not all([name, email, message]):
@@ -68,21 +58,27 @@ def contact():
     contacts_collection.insert_one({
         "name": name,
         "email": email,
-        "requirements": requirements, 
+        "requirements": requirements,
         "message": message
     })
 
-    # Send email
+    # Send email notification
     msg = Message(
         subject=f"New Contact Message from {name}",
         sender=app.config['MAIL_USERNAME'],
         recipients=[app.config['MAIL_USERNAME']]
     )
-    msg.body = f"Name: {name}\nEmail:{email}\nRequirements: {requirements}\n {email}\nMessage: {message}"
+    msg.body = f"""
+Name: {name}
+Email: {email}
+Requirements: {requirements}
+Message: {message}
+"""
     mail.send(msg)
 
-    return jsonify({"status": "success", "message": "Message sent successfully!"}),200
+    return jsonify({"status": "success", "message": "Message sent successfully!"}), 200
 
-# ------------------- Run Flask -------------------
+
+# ------------------- Gunicorn entrypoint ✔ CHANGE ADDED -------------------
 if __name__ == '__main__':
-    app.run(debug=True, port=5000, use_reloader=False)  # use_reloader=False avoids WinError 10038
+    app.run(host='0.0.0.0', port=5000)
