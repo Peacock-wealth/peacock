@@ -276,7 +276,10 @@
 
 <script>
 document.getElementById("contactForm").addEventListener("submit", async function(e) {
-  e.preventDefault();
+    e.preventDefault();
+    console.log("🔥 Submit triggered");
+    alert("🔥 Submit triggered");
+
 
   let name = document.getElementById("name").value;
   let email = document.getElementById("email").value;
