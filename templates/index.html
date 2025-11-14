@@ -104,7 +104,7 @@
     <img src="static/img/m3.jpg">
     <div class="overlay"></div>
     <div class="container hero-content">
-      <h1 style="font-size: 55px;">The turn that leads to legacy<br> built on trust, driven by wisdom.</h1>
+      <h1 style="font-size: 40px;">The turn that leads to legacy<br> built on trust, driven by wisdom</h1>
       <!-- <p>Building your wealth with trust, transparency & expertise.</p> -->
       <!-- <a href="#about" class="btn btn-primary mt-3">talk to us</a> -->
     </div>
@@ -560,7 +560,7 @@ To take the complexity of markets and turn it into clarity, to turn hesitation i
 Our commitment goes beyond returns —
 we build financial ecosystems that evolve with you, protect you, and empower you to live life on your terms.
 
-Every portfolio is not just an investment; it’s a mirror of your aspirations, your values, your future.
+Every portfolio is not just an investment; it's a mirror of your aspirations, your values, your future.
 
 We serve with integrity, guided by research, discipline, and empathy —
 because real wealth isn’t built overnight; it’s built over generations, quietly, consistently, and consciously.
@@ -601,7 +601,7 @@ Our vision is simple — to make wealth a source of calm, confidence, and contri
 <!-- Partnership Logos -->
 <section class="about-section py-5" >
   <div class="container">
-    <h2 class="section-title text-center mb-5" style="font-size:40px;color: rgb(60, 59, 59); font-family:Lexend Peta, sans-serif ;">Corporate Professional</h2>
+    <h2 class="section-title text-center mb-5" style="font-size:30px;color: rgb(60, 59, 59); font-family:Lexend Peta, sans-serif ;">Corporate Professional</h2>
     <!-- <p style="text-align: center;margin-top: 0px;">Collaborating with India’s leading financial institutions to deliver seamless, compliant, and intelligent wealth solutions. -->
 <!-- </p> -->
 
@@ -761,7 +761,7 @@ Our vision is simple — to make wealth a source of calm, confidence, and contri
       <div class="col-md-4 mb-4">
         <h5 class="text-warning mb-3">Quick Links</h5>
         <ul class="list-unstyled">
-          <li><a href="index.html".html" class="text-white text-decoration-none">Home</a></li>
+          <li><a href="index.html" class="text-white text-decoration-none">Home</a></li>
           <!-- <li><a href="about.html" class="text-white text-decoration-none">About Us</a></li> -->
           <!-- <li><a href="services.html" class="text-white text-decoration-none">Services</a></li> -->
           <li><a href="contact.html" class="text-white text-decoration-none">Contact</a></li>
@@ -875,7 +875,31 @@ document.addEventListener("DOMContentLoaded", () => {
   sections.forEach((section) => observer.observe(section));
 });
 </script>
+<script>
+  // Wait until page fully loaded
+document.addEventListener("DOMContentLoaded", function () {
+  // --------------------------
+  // 🔹 HERO SLIDER CODE
+  // --------------------------
+  const slides = document.querySelectorAll(".hero img");
+  let current = 0;
 
+  if (slides.length > 0) {
+    // First image active
+    slides[0].classList.add("active");
+
+    // Change image every 5 seconds
+    setInterval(() => {
+      slides[current].classList.remove("active");
+      current = (current + 1) % slides.length;
+      slides[current].classList.add("active");
+    }, 5000);
+  } else {
+    console.warn("No slides found in .hero section");
+  }
+
+});
+</script>
 <script src="script.js"></script>
 </body>
 </html>
