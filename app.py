@@ -73,20 +73,26 @@ def contact():
         "requirements": requirements,
         "message": message
     })
+        # Send notification email
+    subject_line = f"New Contact Message from {name}".replace("\n", "").strip()
 
-    # Send notification email
-    msg = Message(
-        subject=f"New Contact Message from {name}",
-        sender=app.config["MAIL_USERNAME"],
-        recipients=[app.config["MAIL_USERNAME"]]
+    body_text = (
+        "New Contact Form Submission\n\n"
+        f"Name: {name}\n"
+        f"Email: {email}\n"
+        f"Requirements: {requirements}\n"
+        f"Message: {message}\n"
     )
-    msg.body = f"""
-Name: {name}
-Email: {email}
-Requirements: {requirements}
-Message: {message}
-"""
+
+    msg = Message(
+        subject=subject_line,
+        sender=app.config["MAIL_USERNAME"],
+        recipients=[app.config["MAIL_USERNAME"]],
+    )
+
+    msg.body = body_text
     mail.send(msg)
+
 
     return jsonify({"status": "success", "message": "Message sent successfully!"}), 200
 
