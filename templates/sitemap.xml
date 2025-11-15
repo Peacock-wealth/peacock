@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+<!-- Main Pages -->
+<url>
+  <loc>https://peacockwealthmanagement.com/</loc>
+  <priority>1.00</priority>
+</url>
+
+<url>
+  <loc>https://peacockwealthmanagement.com/contact.html</loc>
+</url>
+
+<url>
+  <loc>https://peacockwealthmanagement.com/financial.html</loc>
+</url>
+
+<url>
+  <loc>https://peacockwealthmanagement.com/pricing.html</loc>
+</url>
+
+<!-- Investment & Advisory -->
+<url><loc>https://peacockwealthmanagement.com/aif.html</loc></url>
+<url><loc>https://peacockwealthmanagement.com/demat.html</loc></url>
+<url><loc>https://peacockwealthmanagement.com/equity.html</loc></url>
+<url><loc>https://peacockwealthmanagement.com/pms.html</loc></url>
+<url><loc>https://peacockwealthmanagement.com/mut.html</loc></url>
+<url><loc>https://peacockwealthmanagement.com/co.html</loc></url>
+<url><loc>https://peacockwealthmanagement.com/unl.html</loc></url>
+<url><loc>https://peacockwealthmanagement.com/sgb.html</loc></url>
+<url><loc>https://peacockwealthmanagement.com/ipo.html</loc></url>
+<url><loc>https://peacockwealthmanagement.com/ncd.html</loc></url>
+<url><loc>https://peacockwealthmanagement.com/fd.html</loc></url>
+<url><loc>https://peacockwealthmanagement.com/debt.html</loc></url>
+
+<!-- Wealth Strategy & Planning -->
+<url><loc>https://peacockwealthmanagement.com/financial.html</loc></url>
+<url><loc>https://peacockwealthmanagement.com/pms.html</loc></url>
+<url><loc>https://peacockwealthmanagement.com/np.html</loc></url>
+<url><loc>https://peacockwealthmanagement.com/las.html</loc></url>
+<url><loc>https://peacockwealthmanagement.com/loans.html</loc></url>
+<url><loc>https://peacockwealthmanagement.com/insurance.html</loc></url>
+<url><loc>https://peacockwealthmanagement.com/sec.html</loc></url>
+<url><loc>https://peacockwealthmanagement.com/market.html</loc></url>
+<url><loc>https://peacockwealthmanagement.com/eco.html</loc></url>
+
+<!-- Markets & Instruments -->
+<url><loc>https://peacockwealthmanagement.com/forex.html</loc></url>
+<url><loc>https://peacockwealthmanagement.com/currency.html</loc></url>
+
+</urlset>
